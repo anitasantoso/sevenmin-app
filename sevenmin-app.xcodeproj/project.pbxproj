@@ -23,6 +23,13 @@
 		08C200CE17477576000D5408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200A917477575000D5408 /* Foundation.framework */; };
 		08C200D617477576000D5408 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08C200D417477576000D5408 /* InfoPlist.strings */; };
 		08C200D917477576000D5408 /* sevenmin_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C200D817477576000D5408 /* sevenmin_appTests.m */; };
+		08C200E8174872F4000D5408 /* ex1.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200E5174872F4000D5408 /* ex1.png */; };
+		08C200E9174872F4000D5408 /* ex2.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200E6174872F4000D5408 /* ex2.png */; };
+		08C200EA174872F4000D5408 /* ex3.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200E7174872F4000D5408 /* ex3.png */; };
+		08C200EC1748730F000D5408 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200EB1748730F000D5408 /* clock.png */; };
+		08C200F217487689000D5408 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200F117487689000D5408 /* clock@2x.png */; };
+		08C200F517487764000D5408 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200F317487764000D5408 /* button.png */; };
+		08C200F617487764000D5408 /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200F417487764000D5408 /* button@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,13 @@
 		08C200D517477576000D5408 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08C200D717477576000D5408 /* sevenmin_appTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sevenmin_appTests.h; sourceTree = "<group>"; };
 		08C200D817477576000D5408 /* sevenmin_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sevenmin_appTests.m; sourceTree = "<group>"; };
+		08C200E5174872F4000D5408 /* ex1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex1.png; path = resources/ex1.png; sourceTree = "<group>"; };
+		08C200E6174872F4000D5408 /* ex2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex2.png; path = resources/ex2.png; sourceTree = "<group>"; };
+		08C200E7174872F4000D5408 /* ex3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex3.png; path = resources/ex3.png; sourceTree = "<group>"; };
+		08C200EB1748730F000D5408 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		08C200F117487689000D5408 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		08C200F317487764000D5408 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		08C200F417487764000D5408 /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +131,7 @@
 		08C200AD17477575000D5408 /* sevenmin-app */ = {
 			isa = PBXGroup;
 			children = (
+				08C200E4174872EB000D5408 /* resources */,
 				08C200B617477575000D5408 /* AppDelegate.h */,
 				08C200B717477575000D5408 /* AppDelegate.m */,
 				08C200BF17477576000D5408 /* ViewController.h */,
@@ -158,6 +173,20 @@
 				08C200D417477576000D5408 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08C200E4174872EB000D5408 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				08C200F317487764000D5408 /* button.png */,
+				08C200F417487764000D5408 /* button@2x.png */,
+				08C200F117487689000D5408 /* clock@2x.png */,
+				08C200EB1748730F000D5408 /* clock.png */,
+				08C200E5174872F4000D5408 /* ex1.png */,
+				08C200E6174872F4000D5408 /* ex2.png */,
+				08C200E7174872F4000D5408 /* ex3.png */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +265,13 @@
 				08C200BC17477575000D5408 /* Default@2x.png in Resources */,
 				08C200BE17477576000D5408 /* Default-568h@2x.png in Resources */,
 				08C200C417477576000D5408 /* ViewController.xib in Resources */,
+				08C200E8174872F4000D5408 /* ex1.png in Resources */,
+				08C200E9174872F4000D5408 /* ex2.png in Resources */,
+				08C200EA174872F4000D5408 /* ex3.png in Resources */,
+				08C200EC1748730F000D5408 /* clock.png in Resources */,
+				08C200F217487689000D5408 /* clock@2x.png in Resources */,
+				08C200F517487764000D5408 /* button.png in Resources */,
+				08C200F617487764000D5408 /* button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
