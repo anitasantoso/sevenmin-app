@@ -88,10 +88,11 @@
     if(self.buttonStateStart) {
         [self.startButton setTitle:@"Start" forState:UIControlStateNormal];
         [self.startButton setBackgroundImage:[UIImage imageNamed:@"start_button"] forState:UIControlStateNormal];
-
+         self.menuButton.enabled = YES;
     } else {
         [self.startButton setTitle:@"Pause" forState:UIControlStateNormal];
         [self.startButton setBackgroundImage:[UIImage imageNamed:@"stop_button"] forState:UIControlStateNormal];
+       self.menuButton.enabled = NO;
     }
 }
 
@@ -103,6 +104,9 @@
 - (IBAction)startButtonPressed:(id)sender {
     
     if(self.buttonStateStart) {
+    
+        
+        
         // start button pressed
         __block MainViewController *bself = self;
         self.startOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:2];
@@ -154,6 +158,8 @@
                 [self.workoutView resetRepIndex];
                 [self.startButton setTitle:@"Start" forState:UIControlStateNormal];
                 
+                ((UILabel*)[self.completedOverlayView viewWithTag:99]).text = [NSString stringWithFormat:@"%d seconds", [TimerMgr sharedInstance].totalDuration];
+                
                 // show done
                 [self.view addSubview:self.completedOverlayView];
                 return;
@@ -198,16 +204,17 @@
     pickerView.completionBlock = ^(NSInteger selectedValue) {
         self.workoutView.numOfReps = selectedValue;
         self.workoutView.repIndex = 0;
+        
+        // store in user defaults
         [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithInt:selectedValue] forKey:@"7MIN_NUM_OF_REPS"];
         [[NSUserDefaults standardUserDefaults]synchronize];
-        
     };
     __block CGRect pickerFrame = pickerView.frame;
     pickerFrame.origin = CGPointMake(0, 320);
     pickerView.frame = pickerFrame;
     [self.view addSubview:pickerView];
     
-    [UIView animateWithDuration:0.5f animations:^{
+    [UIView animateWithDuration:0.2f animations:^{
         pickerFrame.origin = CGPointMake(0, self.view.frame.size.height-pickerView.frame.size.height);
         pickerView.frame = pickerFrame;
     }];

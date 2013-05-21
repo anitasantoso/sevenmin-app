@@ -58,7 +58,7 @@
 }
 
 - (void)remove {
-    [UIView animateWithDuration:0.5f animations:^{
+    [UIView animateWithDuration:0.2f animations:^{
         CGRect frame = self.frame;
         
         // TODO calculate screen height
@@ -70,7 +70,7 @@
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
-    [UIView animateWithDuration:0.5f animations:^{
+    [UIView animateWithDuration:0.2f animations:^{
         CGRect frame = self.frame;
         
         // TODO calculate screen height

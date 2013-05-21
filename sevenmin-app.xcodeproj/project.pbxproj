@@ -29,7 +29,6 @@
 		08C200F217487689000D5408 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200F117487689000D5408 /* clock@2x.png */; };
 		08CA974D17487E0D003A37EE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CA974B17487E0D003A37EE /* MainViewController.xib */; };
 		08CA974E17487FD5003A37EE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA974A17487E0D003A37EE /* MainViewController.m */; };
-		08CA975017488339003A37EE /* WorkoutContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CA974F17488339003A37EE /* WorkoutContentView.xib */; };
 		08CA975217488721003A37EE /* list_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08CA975117488721003A37EE /* list_icon.png */; };
 		08CA975C1748A149003A37EE /* WorkoutSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA975B1748A149003A37EE /* WorkoutSession.m */; };
 		08CA97671748A88B003A37EE /* RepPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CA97661748A88B003A37EE /* RepPickerView.xib */; };
@@ -53,6 +52,8 @@
 		08DBD490174B9EB9000A297D /* start_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD48C174B9EB9000A297D /* start_button@2x.png */; };
 		08DBD491174B9EB9000A297D /* stop_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD48D174B9EB9000A297D /* stop_button.png */; };
 		08DBD492174B9EB9000A297D /* stop_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD48E174B9EB9000A297D /* stop_button@2x.png */; };
+		08DBD495174BA903000A297D /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD493174BA903000A297D /* info.png */; };
+		08DBD496174BA903000A297D /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD494174BA903000A297D /* info@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +96,6 @@
 		08CA974917487E0D003A37EE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		08CA974A17487E0D003A37EE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		08CA974B17487E0D003A37EE /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		08CA974F17488339003A37EE /* WorkoutContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutContentView.xib; sourceTree = "<group>"; };
 		08CA975117488721003A37EE /* list_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_icon.png; sourceTree = "<group>"; };
 		08CA975A1748A149003A37EE /* WorkoutSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutSession.h; sourceTree = "<group>"; };
 		08CA975B1748A149003A37EE /* WorkoutSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutSession.m; sourceTree = "<group>"; };
@@ -126,6 +126,8 @@
 		08DBD48C174B9EB9000A297D /* start_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "start_button@2x.png"; path = "resources/start_button@2x.png"; sourceTree = "<group>"; };
 		08DBD48D174B9EB9000A297D /* stop_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop_button.png; path = resources/stop_button.png; sourceTree = "<group>"; };
 		08DBD48E174B9EB9000A297D /* stop_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stop_button@2x.png"; path = "resources/stop_button@2x.png"; sourceTree = "<group>"; };
+		08DBD493174BA903000A297D /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = resources/info.png; sourceTree = "<group>"; };
+		08DBD494174BA903000A297D /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "info@2x.png"; path = "resources/info@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +195,6 @@
 				08CA974917487E0D003A37EE /* MainViewController.h */,
 				08CA974A17487E0D003A37EE /* MainViewController.m */,
 				08CA974B17487E0D003A37EE /* MainViewController.xib */,
-				08CA974F17488339003A37EE /* WorkoutContentView.xib */,
 				08CA975A1748A149003A37EE /* WorkoutSession.h */,
 				08CA975B1748A149003A37EE /* WorkoutSession.m */,
 				08CA97681748A8FE003A37EE /* RepPickerView.h */,
@@ -249,6 +250,8 @@
 		08C200E4174872EB000D5408 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				08DBD493174BA903000A297D /* info.png */,
+				08DBD494174BA903000A297D /* info@2x.png */,
 				08DBD48B174B9EB9000A297D /* start_button.png */,
 				08DBD48C174B9EB9000A297D /* start_button@2x.png */,
 				08DBD48D174B9EB9000A297D /* stop_button.png */,
@@ -355,7 +358,6 @@
 				08C200EC1748730F000D5408 /* clock.png in Resources */,
 				08C200F217487689000D5408 /* clock@2x.png in Resources */,
 				08CA974D17487E0D003A37EE /* MainViewController.xib in Resources */,
-				08CA975017488339003A37EE /* WorkoutContentView.xib in Resources */,
 				08CA975217488721003A37EE /* list_icon.png in Resources */,
 				08CA97671748A88B003A37EE /* RepPickerView.xib in Resources */,
 				08DBD46C174B6D4C000A297D /* WorkoutView.xib in Resources */,
@@ -373,6 +375,8 @@
 				08DBD490174B9EB9000A297D /* start_button@2x.png in Resources */,
 				08DBD491174B9EB9000A297D /* stop_button.png in Resources */,
 				08DBD492174B9EB9000A297D /* stop_button@2x.png in Resources */,
+				08DBD495174BA903000A297D /* info.png in Resources */,
+				08DBD496174BA903000A297D /* info@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

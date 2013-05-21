@@ -86,6 +86,7 @@
         imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"ex%d", i+1]];
         
         UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(originX, 20, 320, 20)];
+        title.backgroundColor = [UIColor whiteColor];
         title.textAlignment = NSTextAlignmentCenter;
         title.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
         title.text = [workouts objectAtIndex:i];
@@ -96,6 +97,7 @@
         [view addSubview:imgView];
     }
     [self.scrollView addSubview:view];
+    [self reset];
 }
 
 #pragma mark - scroll view delegate
