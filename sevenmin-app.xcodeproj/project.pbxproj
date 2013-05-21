@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08046B59174994C600F3324D /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 08046B58174994C600F3324D /* UIView+Position.m */; };
 		08C200A817477575000D5408 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200A717477575000D5408 /* UIKit.framework */; };
 		08C200AA17477575000D5408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200A917477575000D5408 /* Foundation.framework */; };
 		08C200AC17477575000D5408 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200AB17477575000D5408 /* CoreGraphics.framework */; };
@@ -16,8 +17,6 @@
 		08C200BA17477575000D5408 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200B917477575000D5408 /* Default.png */; };
 		08C200BC17477575000D5408 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200BB17477575000D5408 /* Default@2x.png */; };
 		08C200BE17477576000D5408 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200BD17477576000D5408 /* Default-568h@2x.png */; };
-		08C200C117477576000D5408 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C200C017477576000D5408 /* ViewController.m */; };
-		08C200C417477576000D5408 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C200C217477576000D5408 /* ViewController.xib */; };
 		08C200CC17477576000D5408 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200CB17477576000D5408 /* SenTestingKit.framework */; };
 		08C200CD17477576000D5408 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200A717477575000D5408 /* UIKit.framework */; };
 		08C200CE17477576000D5408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200A917477575000D5408 /* Foundation.framework */; };
@@ -28,8 +27,32 @@
 		08C200EA174872F4000D5408 /* ex3.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200E7174872F4000D5408 /* ex3.png */; };
 		08C200EC1748730F000D5408 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200EB1748730F000D5408 /* clock.png */; };
 		08C200F217487689000D5408 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200F117487689000D5408 /* clock@2x.png */; };
-		08C200F517487764000D5408 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200F317487764000D5408 /* button.png */; };
-		08C200F617487764000D5408 /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C200F417487764000D5408 /* button@2x.png */; };
+		08CA974D17487E0D003A37EE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CA974B17487E0D003A37EE /* MainViewController.xib */; };
+		08CA974E17487FD5003A37EE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA974A17487E0D003A37EE /* MainViewController.m */; };
+		08CA975017488339003A37EE /* WorkoutContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CA974F17488339003A37EE /* WorkoutContentView.xib */; };
+		08CA975217488721003A37EE /* list_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08CA975117488721003A37EE /* list_icon.png */; };
+		08CA975C1748A149003A37EE /* WorkoutSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA975B1748A149003A37EE /* WorkoutSession.m */; };
+		08CA97671748A88B003A37EE /* RepPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CA97661748A88B003A37EE /* RepPickerView.xib */; };
+		08CA976A1748A8FE003A37EE /* RepPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA97691748A8FE003A37EE /* RepPickerView.m */; };
+		08DBD461174B60EF000A297D /* PauseOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBD460174B60EF000A297D /* PauseOverlayView.m */; };
+		08DBD464174B62B2000A297D /* TimerMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBD463174B62B1000A297D /* TimerMgr.m */; };
+		08DBD46C174B6D4C000A297D /* WorkoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD46B174B6D4C000A297D /* WorkoutView.xib */; };
+		08DBD46F174B6D83000A297D /* WorkoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBD46E174B6D83000A297D /* WorkoutView.m */; };
+		08DBD475174B95D6000A297D /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD474174B95D5000A297D /* OverlayView.xib */; };
+		08DBD478174B9781000A297D /* StartOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBD477174B9780000A297D /* StartOverlayView.m */; };
+		08DBD482174B9E8A000A297D /* ex12.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD479174B9E88000A297D /* ex12.png */; };
+		08DBD483174B9E8A000A297D /* ex11.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD47A174B9E88000A297D /* ex11.png */; };
+		08DBD484174B9E8A000A297D /* ex10.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD47B174B9E89000A297D /* ex10.png */; };
+		08DBD485174B9E8A000A297D /* ex9.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD47C174B9E89000A297D /* ex9.png */; };
+		08DBD486174B9E8A000A297D /* ex8.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD47D174B9E89000A297D /* ex8.png */; };
+		08DBD487174B9E8A000A297D /* ex7.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD47E174B9E89000A297D /* ex7.png */; };
+		08DBD488174B9E8A000A297D /* ex6.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD47F174B9E89000A297D /* ex6.png */; };
+		08DBD489174B9E8A000A297D /* ex5.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD480174B9E89000A297D /* ex5.png */; };
+		08DBD48A174B9E8A000A297D /* ex4.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD481174B9E8A000A297D /* ex4.png */; };
+		08DBD48F174B9EB9000A297D /* start_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD48B174B9EB9000A297D /* start_button.png */; };
+		08DBD490174B9EB9000A297D /* start_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD48C174B9EB9000A297D /* start_button@2x.png */; };
+		08DBD491174B9EB9000A297D /* stop_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD48D174B9EB9000A297D /* stop_button.png */; };
+		08DBD492174B9EB9000A297D /* stop_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD48E174B9EB9000A297D /* stop_button@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08046B57174994C600F3324D /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
+		08046B58174994C600F3324D /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
 		08C200A417477575000D5408 /* sevenmin-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sevenmin-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C200A717477575000D5408 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		08C200A917477575000D5408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,9 +81,6 @@
 		08C200B917477575000D5408 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		08C200BB17477575000D5408 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		08C200BD17477576000D5408 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		08C200BF17477576000D5408 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		08C200C017477576000D5408 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		08C200C317477576000D5408 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		08C200CA17477576000D5408 /* sevenmin-appTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sevenmin-appTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C200CB17477576000D5408 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		08C200D317477576000D5408 /* sevenmin-appTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sevenmin-appTests-Info.plist"; sourceTree = "<group>"; };
@@ -70,8 +92,40 @@
 		08C200E7174872F4000D5408 /* ex3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex3.png; path = resources/ex3.png; sourceTree = "<group>"; };
 		08C200EB1748730F000D5408 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		08C200F117487689000D5408 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
-		08C200F317487764000D5408 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
-		08C200F417487764000D5408 /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button@2x.png"; sourceTree = "<group>"; };
+		08CA974917487E0D003A37EE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		08CA974A17487E0D003A37EE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		08CA974B17487E0D003A37EE /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		08CA974F17488339003A37EE /* WorkoutContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutContentView.xib; sourceTree = "<group>"; };
+		08CA975117488721003A37EE /* list_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_icon.png; sourceTree = "<group>"; };
+		08CA975A1748A149003A37EE /* WorkoutSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutSession.h; sourceTree = "<group>"; };
+		08CA975B1748A149003A37EE /* WorkoutSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutSession.m; sourceTree = "<group>"; };
+		08CA97661748A88B003A37EE /* RepPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepPickerView.xib; sourceTree = "<group>"; };
+		08CA97681748A8FE003A37EE /* RepPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepPickerView.h; sourceTree = "<group>"; };
+		08CA97691748A8FE003A37EE /* RepPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepPickerView.m; sourceTree = "<group>"; };
+		08DBD45F174B60EF000A297D /* PauseOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseOverlayView.h; sourceTree = "<group>"; };
+		08DBD460174B60EF000A297D /* PauseOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseOverlayView.m; sourceTree = "<group>"; };
+		08DBD462174B62B1000A297D /* TimerMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerMgr.h; sourceTree = "<group>"; };
+		08DBD463174B62B1000A297D /* TimerMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerMgr.m; sourceTree = "<group>"; };
+		08DBD465174B68AE000A297D /* JTSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSingleton.h; sourceTree = "<group>"; };
+		08DBD46B174B6D4C000A297D /* WorkoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutView.xib; sourceTree = "<group>"; };
+		08DBD46D174B6D82000A297D /* WorkoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutView.h; sourceTree = "<group>"; };
+		08DBD46E174B6D83000A297D /* WorkoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutView.m; sourceTree = "<group>"; };
+		08DBD474174B95D5000A297D /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		08DBD476174B9780000A297D /* StartOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartOverlayView.h; sourceTree = "<group>"; };
+		08DBD477174B9780000A297D /* StartOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartOverlayView.m; sourceTree = "<group>"; };
+		08DBD479174B9E88000A297D /* ex12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex12.png; path = resources/ex12.png; sourceTree = "<group>"; };
+		08DBD47A174B9E88000A297D /* ex11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex11.png; path = resources/ex11.png; sourceTree = "<group>"; };
+		08DBD47B174B9E89000A297D /* ex10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex10.png; path = resources/ex10.png; sourceTree = "<group>"; };
+		08DBD47C174B9E89000A297D /* ex9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex9.png; path = resources/ex9.png; sourceTree = "<group>"; };
+		08DBD47D174B9E89000A297D /* ex8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex8.png; path = resources/ex8.png; sourceTree = "<group>"; };
+		08DBD47E174B9E89000A297D /* ex7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex7.png; path = resources/ex7.png; sourceTree = "<group>"; };
+		08DBD47F174B9E89000A297D /* ex6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex6.png; path = resources/ex6.png; sourceTree = "<group>"; };
+		08DBD480174B9E89000A297D /* ex5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex5.png; path = resources/ex5.png; sourceTree = "<group>"; };
+		08DBD481174B9E8A000A297D /* ex4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ex4.png; path = resources/ex4.png; sourceTree = "<group>"; };
+		08DBD48B174B9EB9000A297D /* start_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_button.png; path = resources/start_button.png; sourceTree = "<group>"; };
+		08DBD48C174B9EB9000A297D /* start_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "start_button@2x.png"; path = "resources/start_button@2x.png"; sourceTree = "<group>"; };
+		08DBD48D174B9EB9000A297D /* stop_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop_button.png; path = resources/stop_button.png; sourceTree = "<group>"; };
+		08DBD48E174B9EB9000A297D /* stop_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stop_button@2x.png"; path = "resources/stop_button@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,12 +186,29 @@
 			isa = PBXGroup;
 			children = (
 				08C200E4174872EB000D5408 /* resources */,
+				08C200AE17477575000D5408 /* Supporting Files */,
 				08C200B617477575000D5408 /* AppDelegate.h */,
 				08C200B717477575000D5408 /* AppDelegate.m */,
-				08C200BF17477576000D5408 /* ViewController.h */,
-				08C200C017477576000D5408 /* ViewController.m */,
-				08C200C217477576000D5408 /* ViewController.xib */,
-				08C200AE17477575000D5408 /* Supporting Files */,
+				08DBD465174B68AE000A297D /* JTSingleton.h */,
+				08CA974917487E0D003A37EE /* MainViewController.h */,
+				08CA974A17487E0D003A37EE /* MainViewController.m */,
+				08CA974B17487E0D003A37EE /* MainViewController.xib */,
+				08CA974F17488339003A37EE /* WorkoutContentView.xib */,
+				08CA975A1748A149003A37EE /* WorkoutSession.h */,
+				08CA975B1748A149003A37EE /* WorkoutSession.m */,
+				08CA97681748A8FE003A37EE /* RepPickerView.h */,
+				08CA97691748A8FE003A37EE /* RepPickerView.m */,
+				08CA97661748A88B003A37EE /* RepPickerView.xib */,
+				08DBD45F174B60EF000A297D /* PauseOverlayView.h */,
+				08DBD460174B60EF000A297D /* PauseOverlayView.m */,
+				08DBD462174B62B1000A297D /* TimerMgr.h */,
+				08DBD463174B62B1000A297D /* TimerMgr.m */,
+				08DBD46B174B6D4C000A297D /* WorkoutView.xib */,
+				08DBD46D174B6D82000A297D /* WorkoutView.h */,
+				08DBD46E174B6D83000A297D /* WorkoutView.m */,
+				08DBD474174B95D5000A297D /* OverlayView.xib */,
+				08DBD476174B9780000A297D /* StartOverlayView.h */,
+				08DBD477174B9780000A297D /* StartOverlayView.m */,
 			);
 			path = "sevenmin-app";
 			sourceTree = "<group>";
@@ -178,13 +249,27 @@
 		08C200E4174872EB000D5408 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				08C200F317487764000D5408 /* button.png */,
-				08C200F417487764000D5408 /* button@2x.png */,
+				08DBD48B174B9EB9000A297D /* start_button.png */,
+				08DBD48C174B9EB9000A297D /* start_button@2x.png */,
+				08DBD48D174B9EB9000A297D /* stop_button.png */,
+				08DBD48E174B9EB9000A297D /* stop_button@2x.png */,
+				08046B57174994C600F3324D /* UIView+Position.h */,
+				08046B58174994C600F3324D /* UIView+Position.m */,
+				08CA975117488721003A37EE /* list_icon.png */,
 				08C200F117487689000D5408 /* clock@2x.png */,
 				08C200EB1748730F000D5408 /* clock.png */,
 				08C200E5174872F4000D5408 /* ex1.png */,
 				08C200E6174872F4000D5408 /* ex2.png */,
 				08C200E7174872F4000D5408 /* ex3.png */,
+				08DBD479174B9E88000A297D /* ex12.png */,
+				08DBD47A174B9E88000A297D /* ex11.png */,
+				08DBD47B174B9E89000A297D /* ex10.png */,
+				08DBD47C174B9E89000A297D /* ex9.png */,
+				08DBD47D174B9E89000A297D /* ex8.png */,
+				08DBD47E174B9E89000A297D /* ex7.png */,
+				08DBD47F174B9E89000A297D /* ex6.png */,
+				08DBD480174B9E89000A297D /* ex5.png */,
+				08DBD481174B9E8A000A297D /* ex4.png */,
 			);
 			name = resources;
 			sourceTree = "<group>";
@@ -264,14 +349,30 @@
 				08C200BA17477575000D5408 /* Default.png in Resources */,
 				08C200BC17477575000D5408 /* Default@2x.png in Resources */,
 				08C200BE17477576000D5408 /* Default-568h@2x.png in Resources */,
-				08C200C417477576000D5408 /* ViewController.xib in Resources */,
 				08C200E8174872F4000D5408 /* ex1.png in Resources */,
 				08C200E9174872F4000D5408 /* ex2.png in Resources */,
 				08C200EA174872F4000D5408 /* ex3.png in Resources */,
 				08C200EC1748730F000D5408 /* clock.png in Resources */,
 				08C200F217487689000D5408 /* clock@2x.png in Resources */,
-				08C200F517487764000D5408 /* button.png in Resources */,
-				08C200F617487764000D5408 /* button@2x.png in Resources */,
+				08CA974D17487E0D003A37EE /* MainViewController.xib in Resources */,
+				08CA975017488339003A37EE /* WorkoutContentView.xib in Resources */,
+				08CA975217488721003A37EE /* list_icon.png in Resources */,
+				08CA97671748A88B003A37EE /* RepPickerView.xib in Resources */,
+				08DBD46C174B6D4C000A297D /* WorkoutView.xib in Resources */,
+				08DBD475174B95D6000A297D /* OverlayView.xib in Resources */,
+				08DBD482174B9E8A000A297D /* ex12.png in Resources */,
+				08DBD483174B9E8A000A297D /* ex11.png in Resources */,
+				08DBD484174B9E8A000A297D /* ex10.png in Resources */,
+				08DBD485174B9E8A000A297D /* ex9.png in Resources */,
+				08DBD486174B9E8A000A297D /* ex8.png in Resources */,
+				08DBD487174B9E8A000A297D /* ex7.png in Resources */,
+				08DBD488174B9E8A000A297D /* ex6.png in Resources */,
+				08DBD489174B9E8A000A297D /* ex5.png in Resources */,
+				08DBD48A174B9E8A000A297D /* ex4.png in Resources */,
+				08DBD48F174B9EB9000A297D /* start_button.png in Resources */,
+				08DBD490174B9EB9000A297D /* start_button@2x.png in Resources */,
+				08DBD491174B9EB9000A297D /* stop_button.png in Resources */,
+				08DBD492174B9EB9000A297D /* stop_button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +407,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CA974E17487FD5003A37EE /* MainViewController.m in Sources */,
 				08C200B417477575000D5408 /* main.m in Sources */,
 				08C200B817477575000D5408 /* AppDelegate.m in Sources */,
-				08C200C117477576000D5408 /* ViewController.m in Sources */,
+				08CA975C1748A149003A37EE /* WorkoutSession.m in Sources */,
+				08CA976A1748A8FE003A37EE /* RepPickerView.m in Sources */,
+				08046B59174994C600F3324D /* UIView+Position.m in Sources */,
+				08DBD461174B60EF000A297D /* PauseOverlayView.m in Sources */,
+				08DBD464174B62B2000A297D /* TimerMgr.m in Sources */,
+				08DBD46F174B6D83000A297D /* WorkoutView.m in Sources */,
+				08DBD478174B9781000A297D /* StartOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,14 +445,6 @@
 				08C200B117477575000D5408 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		08C200C217477576000D5408 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08C200C317477576000D5408 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 		08C200D417477576000D5408 /* InfoPlist.strings */ = {
@@ -489,6 +589,7 @@
 				08C200DE17477576000D5408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08C200DF17477576000D5408 /* Build configuration list for PBXNativeTarget "sevenmin-appTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +598,7 @@
 				08C200E117477576000D5408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
