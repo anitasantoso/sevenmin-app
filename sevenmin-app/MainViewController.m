@@ -72,6 +72,9 @@
     self.timerLabel.text = @"00:00";
     [self.breakOverlayView removeFromSuperview];
     
+    // 55 189 190
+    self.timerLabel.textColor = [UIColor colorWithRed:55.0/255.0 green:189.0/255.0 blue:190.0/255.0 alpha:1.0];
+    
     // reset timer
     [[TimerMgr sharedInstance] reset];
     
@@ -102,16 +105,14 @@
 }
 
 - (IBAction)startButtonPressed:(id)sender {
-    
+
+    // start button pressed
     if(self.buttonStateStart) {
-    
-        
-        
-        // start button pressed
         __block MainViewController *bself = self;
         self.startOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:2];
         
         self.startOverlayView.completionBlock = ^{
+            [[TimerMgr sharedInstance] start];
             [[TimerMgr sharedInstance] startWorkoutTimer];
             
             bself.buttonStateStart = !bself.buttonStateStart;
@@ -143,7 +144,7 @@
     
     // if workout timer is running
     if([[TimerMgr sharedInstance]currentTimer] == TimerTypeWorkout) {
-            
+       self.timerLabel.textColor = [UIColor colorWithRed:130.0/255.0 green:130.0/255.0 blue:130.0/255.0 alpha:1.0f];
         self.workoutView.workoutIndex++;
 
         // stop timer if last workout
@@ -158,6 +159,7 @@
                 [self.workoutView resetRepIndex];
                 [self.startButton setTitle:@"Start" forState:UIControlStateNormal];
                 
+                [[TimerMgr sharedInstance]finish];
                 ((UILabel*)[self.completedOverlayView viewWithTag:99]).text = [NSString stringWithFormat:@"%d seconds", [TimerMgr sharedInstance].totalDuration];
                 
                 // show done
@@ -184,6 +186,9 @@
     
     // if break timer is running
     else {
+        
+        // 55 189 190
+        self.timerLabel.textColor = [UIColor colorWithRed:55.0/255.0 green:189.0/255.0 blue:190.0/255.0 alpha:1.0];
         // end of break
         [[TimerMgr sharedInstance] stopBreakTimer];
         

@@ -8,12 +8,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sevenmin-app/WorkoutView.m"
-         timestampString = "390834937.26193"
+         timestampString = "390835481.840658"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "108"
-         endingLineNumber = "108"
+         startingLineNumber = "109"
+         endingLineNumber = "109"
          landmarkName = "-scrollViewDidScroll:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sevenmin-app/WorkoutView.m"
+         timestampString = "390835423.788298"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "61"
+         endingLineNumber = "61"
+         landmarkName = "-reset"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sevenmin-app/TimerMgr.m"
+         timestampString = "390836492.536046"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "47"
+         endingLineNumber = "47"
+         landmarkName = "-updateDuration"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

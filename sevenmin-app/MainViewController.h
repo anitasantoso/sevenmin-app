@@ -15,6 +15,7 @@
 - (IBAction)startButtonPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
 @property (strong, nonatomic) IBOutlet UILabel *timerLabel;
+@property (strong, nonatomic) IBOutlet UIButton *infoButton;
 - (IBAction)menuButtonPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *menuButton;
 @property (strong, nonatomic) IBOutlet UIButton *infoButtonPressed;

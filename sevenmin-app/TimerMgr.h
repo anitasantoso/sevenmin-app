@@ -21,6 +21,8 @@ typedef enum {
 @property (nonatomic, copy) void(^timerDidFire)(void);
 
 @property (nonatomic) NSInteger totalDuration;
+- (void)start;
+- (void)finish;
 - (void)reset;
 - (void)startWorkoutTimer;
 - (void)stopWorkoutTimer;

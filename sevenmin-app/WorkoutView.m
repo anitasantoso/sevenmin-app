@@ -85,7 +85,7 @@
         imgView.contentMode = UIViewContentModeCenter;
         imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"ex%d", i+1]];
         
-        UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(originX, 20, 320, 20)];
+        UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(originX, 20, 320, 25)];
         title.backgroundColor = [UIColor whiteColor];
         title.textAlignment = NSTextAlignmentCenter;
         title.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];
@@ -98,6 +98,7 @@
     }
     [self.scrollView addSubview:view];
     [self reset];
+    [self setRepIndex:0];
 }
 
 #pragma mark - scroll view delegate
