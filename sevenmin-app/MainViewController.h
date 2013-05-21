@@ -19,6 +19,7 @@
 - (IBAction)menuButtonPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *menuButton;
 @property (strong, nonatomic) IBOutlet UIButton *infoButtonPressed;
+- (IBAction)infoButtonPressed:(id)sender;
 
 //@property (strong, nonatomic) IBOutlet UILabel *numOfRepsLabel;
 //@property (strong, nonatomic) IBOutlet UIPageControl *pageControl;

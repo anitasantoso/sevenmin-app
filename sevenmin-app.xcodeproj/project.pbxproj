@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		08046B59174994C600F3324D /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 08046B58174994C600F3324D /* UIView+Position.m */; };
-		081F9ADB174C2D49000A00A2 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F9ADA174C2D49000A00A2 /* icon@2x.png */; };
-		081F9ADD174C2D96000A00A2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F9ADC174C2D96000A00A2 /* icon.png */; };
+		081F9ADF174C3056000A00A2 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F9ADE174C3056000A00A2 /* icon@2x.png */; };
+		081F9AE1174C3494000A00A2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F9AE0174C3494000A00A2 /* icon.png */; };
+		081F9AE3174C384E000A00A2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081F9AE2174C384E000A00A2 /* QuartzCore.framework */; };
 		08C200A817477575000D5408 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200A717477575000D5408 /* UIKit.framework */; };
 		08C200AA17477575000D5408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200A917477575000D5408 /* Foundation.framework */; };
 		08C200AC17477575000D5408 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200AB17477575000D5408 /* CoreGraphics.framework */; };
@@ -69,8 +70,9 @@
 /* Begin PBXFileReference section */
 		08046B57174994C600F3324D /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
 		08046B58174994C600F3324D /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
-		081F9ADA174C2D49000A00A2 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		081F9ADC174C2D96000A00A2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		081F9ADE174C3056000A00A2 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		081F9AE0174C3494000A00A2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		081F9AE2174C384E000A00A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		08C200A417477575000D5408 /* sevenmin-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sevenmin-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C200A717477575000D5408 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		08C200A917477575000D5408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081F9AE3174C384E000A00A2 /* QuartzCore.framework in Frameworks */,
 				08C200A817477575000D5408 /* UIKit.framework in Frameworks */,
 				08C200AA17477575000D5408 /* Foundation.framework in Frameworks */,
 				08C200AC17477575000D5408 /* CoreGraphics.framework in Frameworks */,
@@ -157,8 +160,9 @@
 		08C2009B17477575000D5408 = {
 			isa = PBXGroup;
 			children = (
-				081F9ADC174C2D96000A00A2 /* icon.png */,
-				081F9ADA174C2D49000A00A2 /* icon@2x.png */,
+				081F9AE2174C384E000A00A2 /* QuartzCore.framework */,
+				081F9AE0174C3494000A00A2 /* icon.png */,
+				081F9ADE174C3056000A00A2 /* icon@2x.png */,
 				08C200AD17477575000D5408 /* sevenmin-app */,
 				08C200D117477576000D5408 /* sevenmin-appTests */,
 				08C200A617477575000D5408 /* Frameworks */,
@@ -375,8 +379,8 @@
 				08DBD490174B9EB9000A297D /* start_button@2x.png in Resources */,
 				08DBD491174B9EB9000A297D /* stop_button.png in Resources */,
 				08DBD492174B9EB9000A297D /* stop_button@2x.png in Resources */,
-				081F9ADB174C2D49000A00A2 /* icon@2x.png in Resources */,
-				081F9ADD174C2D96000A00A2 /* icon.png in Resources */,
+				081F9ADF174C3056000A00A2 /* icon@2x.png in Resources */,
+				081F9AE1174C3494000A00A2 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

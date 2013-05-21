@@ -12,6 +12,7 @@
 #import "TimerMgr.h"
 #import "WorkoutView.h"
 #import "StartOverlayView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MainViewController()
 
@@ -46,9 +47,8 @@
     
     self.breakOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:0];
     self.completedOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:1];
-    
-    UITapGestureRecognizer *tapGest = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(doneOverlayTapped:)];
-    [self.completedOverlayView addGestureRecognizer:tapGest];
+ 
+    [self.completedOverlayView addGestureRecognizer:[self tapToDismissGesture]];
     
     self.formatter = [[NSNumberFormatter alloc]init];
     [self.formatter setMinimumIntegerDigits:2];
@@ -59,13 +59,17 @@
     [self setTimerLabel];
 }
 
+- (UITapGestureRecognizer*)tapToDismissGesture {
+    return [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(doneOverlayTapped:)];
+}
+
 - (void)setTimerLabel {
     NSNumber *remaining = [NSNumber numberWithInt:[[TimerMgr sharedInstance]secondsRemaining]];
     self.timerLabel.text = [NSString stringWithFormat:@"00:%@", [self.formatter stringFromNumber:remaining]];
 }
 
 - (void)doneOverlayTapped:(id)sender {
-    [self.completedOverlayView removeFromSuperview];
+    [[[self.view subviews]lastObject] removeFromSuperview];
 }
 
 - (void)resetApp {
@@ -225,4 +229,12 @@
     }];
 }
 
+- (IBAction)infoButtonPressed:(id)sender {
+    UIView *helpView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:4];
+    UIView *contentView = [helpView viewWithTag:20];
+    contentView.layer.cornerRadius = 7.0f;
+    
+    [helpView addGestureRecognizer:[self tapToDismissGesture]];
+    [self.view addSubview:helpView];
+}
 @end
