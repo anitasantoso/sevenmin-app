@@ -10,19 +10,11 @@
 #define kScrollViewHeight 210
 
 @interface WorkoutView()
-
+@property NSInteger workoutIndex;
+@property (nonatomic)  NSInteger repIndex;
 @end
 
 @implementation WorkoutView
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
 
 - (BOOL)lastWorkout {
     return self.workoutIndex == kNumOfWorkout;
@@ -36,7 +28,10 @@
     self.repIndex = self.repIndex+1;
 }
 
-// TODO
+- (void)nextWorkout {
+    self.workoutIndex = self.workoutIndex+1;
+}
+
 - (void)setRepIndex:(NSInteger)repIndex {
     _repIndex = repIndex;
     self.numOfRepsLabel.text = [NSString stringWithFormat:@"%d/%d reps", self.repIndex+1, self.numOfReps];
@@ -71,15 +66,13 @@
 
 - (void)awakeFromNib {
     [self reset];
-    
     self.pageControl.numberOfPages = kNumOfWorkout;
     
     // scroll view
-//    self.scrollView.userInteractionEnabled = NO;
     self.scrollView.contentSize = CGSizeMake([UIViewUtil screenSize].width*kNumOfWorkout, kScrollViewHeight);
     self.scrollView.delegate = self;
     
-    NSArray *workouts = @[@"Jumping Jacks", @"Wall Sit", @"Push-up" , @"Abdominal Crunch", @"Step-up onto chair", @"Squat", @"Triceps dip on chair", @"Plank", @"High knees run", @"Lunge", @"Push-up and rotation", @"Side plank"];
+    NSArray *workouts = @[@"Jumping Jacks", @"Wall Sit", @"Push-Up" , @"Abdominal Crunch", @"Step-up onto Chair", @"Squat", @"Triceps Dip on Chair", @"Plank", @"High-Knees Run", @"Lunge", @"Push-Up and Rotation", @"Side Plank"];
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIViewUtil screenSize].width*kNumOfWorkout, kScrollViewHeight)];
 
     for(int i=0; i<kNumOfWorkout; i++) {
@@ -96,7 +89,6 @@
         title.text = [workouts objectAtIndex:i];
         title.textColor = [UIColor colorWithRed:236.0/255.0 green:100.0/255.0 blue:79.0/255.0 alpha:1.0f];
         
-
         [view addSubview:title];
         [view addSubview:imgView];
     }

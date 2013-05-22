@@ -7,13 +7,14 @@
 //
 
 #import "StartOverlayView.h"
+
 @interface StartOverlayView()
 @property NSInteger counter;
 @end
+
 @implementation StartOverlayView
 
 - (void)awakeFromNib {
-//    self.label1.hidden = YES;
     self.label2.hidden = YES;
     self.label3.hidden = YES;
 }
@@ -31,7 +32,7 @@
             self.label3.hidden = NO;
             break;
         case 2: {
-            [UIView animateWithDuration:1.0 animations:^{
+            [UIView animateWithDuration:.2 animations:^{
                 [self removeFromSuperview];
             } completion:^(BOOL finished) {
                 self.completionBlock();

@@ -47,17 +47,24 @@
     [self.workoutContentView addSubview:self.workoutView];
     
     self.breakOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:0];
+    
     self.completedOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:1];
- 
-    [self.completedOverlayView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(doneOverlayTapped:)]];
+    [self.completedOverlayView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(overlayTapped:)]];
     
     self.formatter = [[NSNumberFormatter alloc]init];
     [self.formatter setMinimumIntegerDigits:2];
-    
+
+    [self setInitialState];
+}
+
+- (void)setInitialState {
     // initial state
-    [self resetApp];
+    [self resetIteration];
     [self resetButtonState];
     [self setTimerLabel];
+    
+    [self.workoutView resetRepIndex];
+    [self.workoutView enableSwipe:YES];
 }
 
 - (void)setTimerLabel {
@@ -65,14 +72,13 @@
     self.timerLabel.text = [NSString stringWithFormat:@"00:%@", [self.formatter stringFromNumber:remaining]];
 }
 
-- (void)doneOverlayTapped:(id)sender {
+- (void)overlayTapped:(id)sender {
     UIView *view = [[self.view subviews]lastObject];
     [UIViewUtil removeView:view fromSuperview:self.view];
 }
 
-- (void)resetApp {
+- (void)resetIteration {
     self.timerLabel.text = @"00:00";
-    [self.breakOverlayView removeFromSuperview];
     self.timerLabel.textColor = [UIViewUtil tealColor];
     
     // reset timer
@@ -80,7 +86,6 @@
     
     // reset scroll view
     [self.workoutView reset];
-    [self.workoutView enableSwipe:YES];
 }
 
 - (void)resetButtonState {
@@ -114,14 +119,13 @@
     if(self.buttonStateStart) {
         
         // reset page control position etc
-        [self.workoutView reset];
+        [self.workoutView enableSwipe:NO];
         
         __block MainViewController *bself = self;
         self.startOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:2];
         
         self.startOverlayView.completionBlock = ^{
-            [[TimerMgr sharedInstance] start];
-            [bself.workoutView enableSwipe:NO];
+            [[TimerMgr sharedInstance] beginSession];
             [[TimerMgr sharedInstance] startWorkoutTimer];
             
             bself.buttonStateStart = !bself.buttonStateStart;
@@ -138,9 +142,7 @@
         PauseOverlayView *pauseView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:3];
         pauseView.doneBlock = ^{
             // done with workout
-            [self.workoutView resetRepIndex];
-            [self resetButtonState];
-            [self resetApp];
+            [self setInitialState];
         };
         pauseView.resumeBlock = ^{
             [[TimerMgr sharedInstance]restartCurrentTimer];
@@ -156,26 +158,24 @@
         
         // gray color
         self.timerLabel.textColor = [UIColor colorWithRed:130.0/255.0 green:130.0/255.0 blue:130.0/255.0 alpha:1.0f];
-        self.workoutView.workoutIndex++;
+        [self.workoutView nextWorkout];
 
         // stop timer if last workout
         if([self.workoutView lastWorkout]) {
             
             // last workout
             // reset all counter except repIndex
-            [self resetApp];
+            [self resetIteration];
             
             // stop app
             if([self.workoutView lastRep]) {
+                [[TimerMgr sharedInstance]endSession]; // stop duration counter
                 
-                [self.workoutView resetRepIndex];
-                [self resetButtonState];
-                
-                [[TimerMgr sharedInstance]finish];
                 ((UILabel*)[self.completedOverlayView viewWithTag:99]).text = [NSString stringWithFormat:@"%d seconds", [TimerMgr sharedInstance].totalDuration];
                 
-                // show done
-                [self.view addSubview:self.completedOverlayView];
+                // show done overlay
+                [UIViewUtil addView:self.completedOverlayView toSuperview:self.view];
+                [self setInitialState];
                 return;
             }
             
@@ -219,7 +219,7 @@
     pickerView.currentValue = self.workoutView.numOfReps;
     pickerView.completionBlock = ^(NSInteger selectedValue) {
         self.workoutView.numOfReps = selectedValue;
-        self.workoutView.repIndex = 0;
+        [self.workoutView resetRepIndex];
         
         // store in user defaults
         [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithInt:selectedValue] forKey:kNumOfRepsKey];
@@ -241,7 +241,7 @@
     UIView *contentView = [helpView viewWithTag:20];
     contentView.layer.cornerRadius = 7.0f;
     
-    [helpView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(doneOverlayTapped:)]];
+    [helpView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(overlayTapped:)]];
     [UIViewUtil addView:helpView toSuperview:self.view];
 }
 

@@ -34,19 +34,18 @@ JTSYNTHESIZE_SINGLETON_FOR_CLASS(TimerMgr)
 
 }
 
-- (void)start {
+- (void)beginSession {
     self.totalDuration = 0;
     self.durationTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateDuration) userInfo:nil repeats:YES];
 }
 
-- (void)finish {
+- (void)endSession {
     [self.durationTimer invalidate];
 }
 
 - (void)updateDuration {
     self.totalDuration++;
 }
-
 
 - (void)startWorkoutTimerAndReset:(BOOL)reset {
     [self stopWorkoutTimer];

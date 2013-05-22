@@ -9,11 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface WorkoutView : UIView<UIScrollViewDelegate>
-@property NSInteger workoutIndex;
+
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
 
-@property (nonatomic)  NSInteger repIndex;
 @property NSInteger numOfReps;
 @property (strong, nonatomic) IBOutlet UILabel *numOfRepsLabel;
 @property (strong, nonatomic) IBOutlet UIView *mainContentView;
@@ -24,5 +23,6 @@
 - (BOOL)lastWorkout;
 - (BOOL)lastRep;
 - (void)nextRep;
+- (void)nextWorkout;
 - (void)enableSwipe:(BOOL)enable;
 @end
