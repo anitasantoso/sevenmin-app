@@ -63,6 +63,9 @@
     [self resetButtonState];
     [self setTimerLabel];
     
+    // if paused during break, remove this
+    [self.breakOverlayView removeFromSuperview];
+    
     [self.workoutView resetRepIndex];
     [self.workoutView enableSwipe:YES];
 }
