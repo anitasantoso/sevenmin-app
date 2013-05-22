@@ -15,10 +15,14 @@
 
 #define kNumOfWorkout 12
 #ifdef DEBUG
-    #define kWorkoutDuration 5
-    #define kBreakDuration 3
+    #define kWorkoutDuration 30
+    #define kBreakDuration 10
 #else
     #define kWorkoutDuration 30
     #define kBreakDuration 10
 #endif
+
+#define kNumOfRepsKey @"7MIN_NUM_OF_REPS"
 #define kDefaultNumOfReps 1
+
+#import "UIViewUtil.h"

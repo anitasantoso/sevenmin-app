@@ -47,7 +47,7 @@
 								<string key="NSFrame">{{0, -5}, {50, 50}}</string>
 								<reference key="NSSuperview" ref="506213219"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="987082136"/>
+								<reference key="NSNextKeyView" ref="865938033"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<int key="IBUIContentMode">4</int>
@@ -83,10 +83,10 @@
 							<object class="IBUIButton" id="163140625">
 								<reference key="NSNextResponder" ref="506213219"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{289, 9}, {18, 19}}</string>
+								<string key="NSFrame">{{289, 8}, {18, 19}}</string>
 								<reference key="NSSuperview" ref="506213219"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="576889087"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<int key="IBUIContentMode">4</int>
@@ -103,7 +103,7 @@
 								<reference key="IBUIFontDescription" ref="933290342"/>
 								<reference key="IBUIFont" ref="692612016"/>
 							</object>
-							<object class="IBUILabel" id="987082136">
+							<object class="IBUILabel" id="865938033">
 								<reference key="NSNextResponder" ref="506213219"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{67, 9}, {186, 21}}</string>
@@ -409,7 +409,7 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="524444166"/>
 							<reference ref="163140625"/>
-							<reference ref="987082136"/>
+							<reference ref="865938033"/>
 						</array>
 						<reference key="parent" ref="189587067"/>
 					</object>
@@ -425,7 +425,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">78</int>
-						<reference key="object" ref="987082136"/>
+						<reference key="object" ref="865938033"/>
 						<reference key="parent" ref="506213219"/>
 					</object>
 				</array>
@@ -449,7 +449,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">79</int>
+			<int key="maxID">87</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -479,6 +479,7 @@
 						<string key="infoButton">UIButton</string>
 						<string key="infoButtonPressed">UIButton</string>
 						<string key="menuButton">UIButton</string>
+						<string key="navbarOverlayView">UIView</string>
 						<string key="startButton">UIButton</string>
 						<string key="timerLabel">UILabel</string>
 						<string key="workoutContentView">UIView</string>
@@ -495,6 +496,10 @@
 						<object class="IBToOneOutletInfo" key="menuButton">
 							<string key="name">menuButton</string>
 							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="navbarOverlayView">
+							<string key="name">navbarOverlayView</string>
+							<string key="candidateClassName">UIView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="startButton">
 							<string key="name">startButton</string>

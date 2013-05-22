@@ -54,15 +54,19 @@
     self.pageControl.currentPage = 0;
     
     // first workout
-    [self.scrollView scrollRectToVisible:CGRectMake(0, self.scrollView.frame.origin.y, 320, kScrollViewHeight) animated:YES];
+    [self.scrollView scrollRectToVisible:CGRectMake(0, self.scrollView.frame.origin.y, [UIViewUtil screenSize].width, kScrollViewHeight) animated:YES];
     
     // remember number of reps from previous session
-    NSInteger numOfReps = [[[NSUserDefaults standardUserDefaults]valueForKey:@"7MIN_NUM_OF_REPS"]intValue];
+    NSInteger numOfReps = [[[NSUserDefaults standardUserDefaults]valueForKey:kNumOfRepsKey]intValue];
     self.numOfReps = numOfReps == 0? kDefaultNumOfReps : numOfReps;
 }
 
 - (void)showNextWorkout {
-    [self.scrollView scrollRectToVisible:CGRectMake(320*self.workoutIndex, self.scrollView.frame.origin.y, 320, 210) animated:YES];
+    [self.scrollView scrollRectToVisible:CGRectMake([UIViewUtil screenSize].width*self.workoutIndex, self.scrollView.frame.origin.y, [UIViewUtil screenSize].width, kScrollViewHeight) animated:YES];
+}
+
+- (void)enableSwipe:(BOOL)enable {
+    self.scrollView.userInteractionEnabled = enable;
 }
 
 - (void)awakeFromNib {
@@ -71,21 +75,21 @@
     self.pageControl.numberOfPages = kNumOfWorkout;
     
     // scroll view
-    self.scrollView.userInteractionEnabled = NO;
-    self.scrollView.contentSize = CGSizeMake(320*kNumOfWorkout, kScrollViewHeight);
+//    self.scrollView.userInteractionEnabled = NO;
+    self.scrollView.contentSize = CGSizeMake([UIViewUtil screenSize].width*kNumOfWorkout, kScrollViewHeight);
     self.scrollView.delegate = self;
     
     NSArray *workouts = @[@"Jumping Jacks", @"Wall Sit", @"Push-up" , @"Abdominal Crunch", @"Step-up onto chair", @"Squat", @"Triceps dip on chair", @"Plank", @"High knees run", @"Lunge", @"Push-up and rotation", @"Side plank"];
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320*kNumOfWorkout, kScrollViewHeight)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIViewUtil screenSize].width*kNumOfWorkout, kScrollViewHeight)];
 
     for(int i=0; i<kNumOfWorkout; i++) {
-        NSInteger originX = 320*i;
+        NSInteger originX = [UIViewUtil screenSize].width*i;
         
-        UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(originX, 50, 320, 160)];
+        UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(originX, 50, [UIViewUtil screenSize].width, 160)];
         imgView.contentMode = UIViewContentModeCenter;
         imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"ex%d", i+1]];
         
-        UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(originX, 20, 320, 25)];
+        UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(originX, 20, [UIViewUtil screenSize].width, 25)];
         title.backgroundColor = [UIColor whiteColor];
         title.textAlignment = NSTextAlignmentCenter;
         title.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:20];

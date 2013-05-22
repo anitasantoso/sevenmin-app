@@ -24,4 +24,5 @@
 - (BOOL)lastWorkout;
 - (BOOL)lastRep;
 - (void)nextRep;
+- (void)enableSwipe:(BOOL)enable;
 @end

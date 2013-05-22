@@ -11,6 +11,7 @@
 		081F9ADF174C3056000A00A2 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F9ADE174C3056000A00A2 /* icon@2x.png */; };
 		081F9AE1174C3494000A00A2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F9AE0174C3494000A00A2 /* icon.png */; };
 		081F9AE3174C384E000A00A2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081F9AE2174C384E000A00A2 /* QuartzCore.framework */; };
+		081F9AE6174C3F11000A00A2 /* UIViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F9AE5174C3F11000A00A2 /* UIViewUtil.m */; };
 		08C200A817477575000D5408 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200A717477575000D5408 /* UIKit.framework */; };
 		08C200AA17477575000D5408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200A917477575000D5408 /* Foundation.framework */; };
 		08C200AC17477575000D5408 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C200AB17477575000D5408 /* CoreGraphics.framework */; };
@@ -73,7 +74,9 @@
 		081F9ADE174C3056000A00A2 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		081F9AE0174C3494000A00A2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		081F9AE2174C384E000A00A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		08C200A417477575000D5408 /* sevenmin-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sevenmin-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		081F9AE4174C3F11000A00A2 /* UIViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewUtil.h; sourceTree = "<group>"; };
+		081F9AE5174C3F11000A00A2 /* UIViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewUtil.m; sourceTree = "<group>"; };
+		08C200A417477575000D5408 /* 7-Minute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "7-Minute.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C200A717477575000D5408 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		08C200A917477575000D5408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08C200AB17477575000D5408 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -173,7 +176,7 @@
 		08C200A517477575000D5408 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08C200A417477575000D5408 /* sevenmin-app.app */,
+				08C200A417477575000D5408 /* 7-Minute.app */,
 				08C200CA17477576000D5408 /* sevenmin-appTests.octest */,
 			);
 			name = Products;
@@ -216,6 +219,8 @@
 				08DBD474174B95D5000A297D /* OverlayView.xib */,
 				08DBD476174B9780000A297D /* StartOverlayView.h */,
 				08DBD477174B9780000A297D /* StartOverlayView.m */,
+				081F9AE4174C3F11000A00A2 /* UIViewUtil.h */,
+				081F9AE5174C3F11000A00A2 /* UIViewUtil.m */,
 			);
 			path = "sevenmin-app";
 			sourceTree = "<group>";
@@ -298,7 +303,7 @@
 			);
 			name = "sevenmin-app";
 			productName = "sevenmin-app";
-			productReference = 08C200A417477575000D5408 /* sevenmin-app.app */;
+			productReference = 08C200A417477575000D5408 /* 7-Minute.app */;
 			productType = "com.apple.product-type.application";
 		};
 		08C200C917477576000D5408 /* sevenmin-appTests */ = {
@@ -425,6 +430,7 @@
 				08DBD464174B62B2000A297D /* TimerMgr.m in Sources */,
 				08DBD46F174B6D83000A297D /* WorkoutView.m in Sources */,
 				08DBD478174B9781000A297D /* StartOverlayView.m in Sources */,
+				081F9AE6174C3F11000A00A2 /* UIViewUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +534,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sevenmin-app/sevenmin-app-Prefix.pch";
 				INFOPLIST_FILE = "sevenmin-app/sevenmin-app-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "7-Minute";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -539,7 +545,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sevenmin-app/sevenmin-app-Prefix.pch";
 				INFOPLIST_FILE = "sevenmin-app/sevenmin-app-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "7-Minute";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -13,6 +13,7 @@
 #import "WorkoutView.h"
 #import "StartOverlayView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIViewUtil.h"
 
 @interface MainViewController()
 
@@ -48,7 +49,7 @@
     self.breakOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:0];
     self.completedOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:1];
  
-    [self.completedOverlayView addGestureRecognizer:[self tapToDismissGesture]];
+    [self.completedOverlayView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(doneOverlayTapped:)]];
     
     self.formatter = [[NSNumberFormatter alloc]init];
     [self.formatter setMinimumIntegerDigits:2];
@@ -59,31 +60,27 @@
     [self setTimerLabel];
 }
 
-- (UITapGestureRecognizer*)tapToDismissGesture {
-    return [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(doneOverlayTapped:)];
-}
-
 - (void)setTimerLabel {
     NSNumber *remaining = [NSNumber numberWithInt:[[TimerMgr sharedInstance]secondsRemaining]];
     self.timerLabel.text = [NSString stringWithFormat:@"00:%@", [self.formatter stringFromNumber:remaining]];
 }
 
 - (void)doneOverlayTapped:(id)sender {
-    [[[self.view subviews]lastObject] removeFromSuperview];
+    UIView *view = [[self.view subviews]lastObject];
+    [UIViewUtil removeView:view fromSuperview:self.view];
 }
 
 - (void)resetApp {
     self.timerLabel.text = @"00:00";
     [self.breakOverlayView removeFromSuperview];
-    
-    // 55 189 190
-    self.timerLabel.textColor = [UIColor colorWithRed:55.0/255.0 green:189.0/255.0 blue:190.0/255.0 alpha:1.0];
+    self.timerLabel.textColor = [UIViewUtil tealColor];
     
     // reset timer
     [[TimerMgr sharedInstance] reset];
     
     // reset scroll view
     [self.workoutView reset];
+    [self.workoutView enableSwipe:YES];
 }
 
 - (void)resetButtonState {
@@ -95,11 +92,14 @@
     if(self.buttonStateStart) {
         [self.startButton setTitle:@"Start" forState:UIControlStateNormal];
         [self.startButton setBackgroundImage:[UIImage imageNamed:@"start_button"] forState:UIControlStateNormal];
-         self.menuButton.enabled = YES;
+        self.menuButton.hidden = NO;
+        self.infoButton.hidden = NO;
     } else {
         [self.startButton setTitle:@"Pause" forState:UIControlStateNormal];
         [self.startButton setBackgroundImage:[UIImage imageNamed:@"stop_button"] forState:UIControlStateNormal];
-       self.menuButton.enabled = NO;
+
+        self.menuButton.hidden = YES;
+        self.infoButton.hidden = YES;
     }
 }
 
@@ -112,11 +112,16 @@
 
     // start button pressed
     if(self.buttonStateStart) {
+        
+        // reset page control position etc
+        [self.workoutView reset];
+        
         __block MainViewController *bself = self;
         self.startOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:2];
         
         self.startOverlayView.completionBlock = ^{
             [[TimerMgr sharedInstance] start];
+            [bself.workoutView enableSwipe:NO];
             [[TimerMgr sharedInstance] startWorkoutTimer];
             
             bself.buttonStateStart = !bself.buttonStateStart;
@@ -148,7 +153,9 @@
     
     // if workout timer is running
     if([[TimerMgr sharedInstance]currentTimer] == TimerTypeWorkout) {
-       self.timerLabel.textColor = [UIColor colorWithRed:130.0/255.0 green:130.0/255.0 blue:130.0/255.0 alpha:1.0f];
+        
+        // gray color
+        self.timerLabel.textColor = [UIColor colorWithRed:130.0/255.0 green:130.0/255.0 blue:130.0/255.0 alpha:1.0f];
         self.workoutView.workoutIndex++;
 
         // stop timer if last workout
@@ -190,9 +197,8 @@
     
     // if break timer is running
     else {
+        self.timerLabel.textColor = [UIViewUtil tealColor];
         
-        // 55 189 190
-        self.timerLabel.textColor = [UIColor colorWithRed:55.0/255.0 green:189.0/255.0 blue:190.0/255.0 alpha:1.0];
         // end of break
         [[TimerMgr sharedInstance] stopBreakTimer];
         
@@ -215,11 +221,11 @@
         self.workoutView.repIndex = 0;
         
         // store in user defaults
-        [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithInt:selectedValue] forKey:@"7MIN_NUM_OF_REPS"];
+        [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithInt:selectedValue] forKey:kNumOfRepsKey];
         [[NSUserDefaults standardUserDefaults]synchronize];
     };
     __block CGRect pickerFrame = pickerView.frame;
-    pickerFrame.origin = CGPointMake(0, 320);
+    pickerFrame.origin = CGPointMake(0, [UIViewUtil screenSize].width);
     pickerView.frame = pickerFrame;
     [self.view addSubview:pickerView];
     
@@ -234,7 +240,8 @@
     UIView *contentView = [helpView viewWithTag:20];
     contentView.layer.cornerRadius = 7.0f;
     
-    [helpView addGestureRecognizer:[self tapToDismissGesture]];
-    [self.view addSubview:helpView];
+    [helpView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(doneOverlayTapped:)]];
+    [UIViewUtil addView:helpView toSuperview:self.view];
 }
+
 @end

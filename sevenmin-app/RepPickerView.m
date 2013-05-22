@@ -62,7 +62,7 @@
         CGRect frame = self.frame;
         
         // TODO calculate screen height
-        frame.origin = CGPointMake(0, 480);
+        frame.origin = CGPointMake(0, [UIViewUtil screenSize].height);
         self.frame = frame;
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
@@ -74,7 +74,7 @@
         CGRect frame = self.frame;
         
         // TODO calculate screen height
-        frame.origin = CGPointMake(0, 480);
+        frame.origin = CGPointMake(0, [UIViewUtil screenSize].height);
         self.frame = frame;
     } completion:^(BOOL finished) {
         self.completionBlock(self.selectedValue);
