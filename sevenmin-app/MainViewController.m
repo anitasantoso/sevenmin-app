@@ -167,8 +167,9 @@
             
             // stop app
             if([self.workoutView lastRep]) {
+                
                 [self.workoutView resetRepIndex];
-                [self.startButton setTitle:@"Start" forState:UIControlStateNormal];
+                [self resetButtonState];
                 
                 [[TimerMgr sharedInstance]finish];
                 ((UILabel*)[self.completedOverlayView viewWithTag:99]).text = [NSString stringWithFormat:@"%d seconds", [TimerMgr sharedInstance].totalDuration];

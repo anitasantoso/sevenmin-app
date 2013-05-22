@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "08C200A317477575000D5408"
-               BuildableName = "sevenmin-app.app"
+               BuildableName = "7-Minute.app"
                BlueprintName = "sevenmin-app"
                ReferencedContainer = "container:sevenmin-app.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "08C200A317477575000D5408"
-            BuildableName = "sevenmin-app.app"
+            BuildableName = "7-Minute.app"
             BlueprintName = "sevenmin-app"
             ReferencedContainer = "container:sevenmin-app.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "08C200A317477575000D5408"
-            BuildableName = "sevenmin-app.app"
+            BuildableName = "7-Minute.app"
             BlueprintName = "sevenmin-app"
             ReferencedContainer = "container:sevenmin-app.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "08C200A317477575000D5408"
-            BuildableName = "sevenmin-app.app"
+            BuildableName = "7-Minute.app"
             BlueprintName = "sevenmin-app"
             ReferencedContainer = "container:sevenmin-app.xcodeproj">
          </BuildableReference>

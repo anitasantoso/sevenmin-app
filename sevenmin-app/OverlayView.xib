@@ -50,7 +50,7 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MAA</bytes>
 						</object>
-						<float key="IBUIAlpha">0.64999997615814209</float>
+						<float key="IBUIAlpha">0.5</float>
 						<object class="IBUISimulatedSizeMetrics" key="IBUISimulatedDestinationMetrics" id="459643752">
 							<string key="IBUISimulatedSizeMetricsClass">IBUISimulatedFreeformSizeMetricsSentinel</string>
 							<string key="IBUIDisplayName">Freeform</string>
@@ -63,6 +63,7 @@
 						<string key="NSFrame">{{91, 70}, {138, 70}}</string>
 						<reference key="NSSuperview" ref="922682349"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -145,9 +146,10 @@
 							<object class="IBUILabel" id="40942798">
 								<reference key="NSNextResponder" ref="163383395"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{55, 265}, {210, 80}}</string>
+								<string key="NSFrame">{{55, 291}, {210, 80}}</string>
 								<reference key="NSSuperview" ref="163383395"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -321,6 +323,7 @@
 						<string key="NSFrame">{{45, 280}, {229, 70}}</string>
 						<reference key="NSSuperview" ref="571104977"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -374,6 +377,7 @@
 						<string key="NSFrame">{{170, 250}, {130, 50}}</string>
 						<reference key="NSSuperview" ref="878569979"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<int key="IBUIContentMode">4</int>
@@ -488,9 +492,10 @@
 							<object class="IBUITextView" id="502957986">
 								<reference key="NSNextResponder" ref="340192006"/>
 								<int key="NSvFlags">274</int>
-								<string key="NSFrame">{{10, 46}, {260, 358}}</string>
+								<string key="NSFrame">{{10, 47}, {260, 358}}</string>
 								<reference key="NSSuperview" ref="340192006"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<reference key="IBUIBackgroundColor" ref="958159182"/>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -510,10 +515,10 @@ d2VpZ2h0IHJvb20gaW50byBhYm91dCBzZXZlbiBtaW51dGVzIG9mIHN0ZWFkeSBkaXNjb21mb3J0IOKA
 lCBhbGwgb2YgaXQgYmFzZWQgb24gc2NpZW5jZS4gIAoKVGhlIGV4ZXJjaXNlcyBzaG91bGQgYmUgcGVy
 Zm9ybWVkIGluIHJhcGlkIHN1Y2Nlc3Npb24sIGFsbG93aW5nIDMwIHNlY29uZHMgZm9yIGVhY2gsIHdo
 aWxlLCB0aHJvdWdob3V0LCB0aGUgaW50ZW5zaXR5IGhvdmVycyBhdCBhYm91dCBhbiA4IG9uIGEgZGlz
-Y29tZm9ydCBzY2FsZSBvZiAxIHRvIDEwLCBNci4gSm9yZGFuIHNheXMuIFRob3NlIHNldmVuIG1pbnV0
-ZXMgc2hvdWxkIGJlLCBpbiBhIHdvcmQsIHVucGxlYXNhbnQuICBUaGUgdXBzaWRlIGlzLCBhZnRlciBz
-ZXZlbiBtaW51dGVzLCB5b3XigJlyZSBkb25lLiAKCkFsbCBpbWFnZXMgYW5kIGV4Y2VycHRzIGFyZSB0
-YWtlbiBmcm9tIFRoZSBOZXcgWW9yayBUaW1lcy4</bytes>
+Y29tZm9ydCBzY2FsZSBvZiAxIHRvIDEwLiBUaG9zZSBzZXZlbiBtaW51dGVzIHNob3VsZCBiZSwgaW4g
+YSB3b3JkLCB1bnBsZWFzYW50LiBUaGUgdXBzaWRlIGlzLCBhZnRlciBzZXZlbiBtaW51dGVzLCB5b3Xi
+gJlyZSBkb25lLiAKCkFsbCBpbWFnZXMgYW5kIGV4Y2VycHRzIGFyZSB0YWtlbiBmcm9tIFRoZSBOZXcg
+WW9yayBUaW1lcy4</bytes>
 								</object>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>

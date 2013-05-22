@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sevenmin-app/MainViewController.m"
-         timestampString = "390876980.073"
+         timestampString = "390892055.123555"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "241"
-         endingLineNumber = "241"
+         startingLineNumber = "242"
+         endingLineNumber = "242"
          landmarkName = "-infoButtonPressed:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -66,6 +66,19 @@
          startingLineNumber = "51"
          endingLineNumber = "51"
          landmarkName = "-reset"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sevenmin-app/MainViewController.m"
+         timestampString = "390892253.841507"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "87"
+         endingLineNumber = "87"
+         landmarkName = "-resetButtonState"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
