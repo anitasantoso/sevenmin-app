@@ -22,6 +22,7 @@
 @property (nonatomic, strong) UIView *completedOverlayView;
 @property (nonatomic, strong) StartOverlayView *startOverlayView;
 @property (nonatomic, strong) WorkoutView *workoutView;
+@property CGRect fullscreen;
 @property BOOL buttonStateStart;
 @end
 
@@ -42,13 +43,19 @@
         [self setTimerLabel];
     };
 
+    self.fullscreen = CGRectMake(0, 0, [UIViewUtil screenSize].width, [UIViewUtil screenSize].height);
+    
     // scroll view
     self.workoutView = [[[NSBundle mainBundle]loadNibNamed:@"WorkoutView" owner:nil options:nil]objectAtIndex:0];
+    self.workoutView.frame = self.fullscreen;
     [self.workoutContentView addSubview:self.workoutView];
     
     self.breakOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:0];
+    self.breakOverlayView.frame = self.fullscreen;
     
     self.completedOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:1];
+    self.completedOverlayView.frame = self.fullscreen;
+    
     [self.completedOverlayView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(overlayTapped:)]];
     
     self.formatter = [[NSNumberFormatter alloc]init];
@@ -117,15 +124,17 @@
 }
 
 - (IBAction)startButtonPressed:(id)sender {
-
+    
     // start button pressed
     if(self.buttonStateStart) {
         
         // reset page control position etc
+        [self setInitialState];
         [self.workoutView enableSwipe:NO];
         
         __block MainViewController *bself = self;
         self.startOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:2];
+        self.startOverlayView.frame = self.fullscreen;
         
         self.startOverlayView.completionBlock = ^{
             [[TimerMgr sharedInstance] beginSession];
@@ -143,6 +152,8 @@
        
         // show pause overlay
         PauseOverlayView *pauseView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:3];
+        pauseView.frame = self.fullscreen;
+        
         pauseView.doneBlock = ^{
             // done with workout
             [self setInitialState];
@@ -241,6 +252,8 @@
 
 - (IBAction)infoButtonPressed:(id)sender {
     UIView *helpView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:4];
+    helpView.frame = self.fullscreen;
+    
     UIView *contentView = [helpView viewWithTag:20];
     contentView.layer.cornerRadius = 7.0f;
     

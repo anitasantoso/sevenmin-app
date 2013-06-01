@@ -534,7 +534,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sevenmin-app/sevenmin-app-Prefix.pch";
 				INFOPLIST_FILE = "sevenmin-app/sevenmin-app-Info.plist";
-				PRODUCT_NAME = "7-Minute";
+				PRODUCT_NAME = "Seven-Minute";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -542,10 +542,14 @@
 		08C200DE17477576000D5408 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Maria Santoso (L35YSLXNYN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Maria Santoso (L35YSLXNYN)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sevenmin-app/sevenmin-app-Prefix.pch";
 				INFOPLIST_FILE = "sevenmin-app/sevenmin-app-Info.plist";
-				PRODUCT_NAME = "7-Minute";
+				PRODUCT_NAME = "Seven-Minute";
+				PROVISIONING_PROFILE = "9315FF98-D25B-4FE0-A9BA-9DC1F8D0B0C2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9315FF98-D25B-4FE0-A9BA-9DC1F8D0B0C2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
