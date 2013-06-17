@@ -1,0 +1,10 @@
+PODS:
+  - MFSideMenu (0.5.2)
+
+DEPENDENCIES:
+  - MFSideMenu (~> 0.5.2)
+
+SPEC CHECKSUMS:
+  MFSideMenu: 5b27d9a112680a98458defbb2863cda45f2f2ffd
+
+COCOAPODS: 0.20.2

@@ -14,6 +14,7 @@
 #import "StartOverlayView.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIViewUtil.h"
+#import "SoundMgr.h"
 
 @interface MainViewController()
 
@@ -169,7 +170,7 @@
     
     // if workout timer is running
     if([[TimerMgr sharedInstance]currentTimer] == TimerTypeWorkout) {
-        
+
         // gray color
         self.timerLabel.textColor = [UIColor colorWithRed:130.0/255.0 green:130.0/255.0 blue:130.0/255.0 alpha:1.0f];
         [self.workoutView nextWorkout];
@@ -204,6 +205,9 @@
             // stop workout timer
             [[TimerMgr sharedInstance] stopWorkoutTimer];
         }
+        
+        // TODO play sound here?
+        [[SoundMgr sharedInstance] playWhistleSound];
         
         // start break
         [[TimerMgr sharedInstance] startBreakTimer];
