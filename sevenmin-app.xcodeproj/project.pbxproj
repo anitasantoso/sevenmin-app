@@ -76,7 +76,7 @@
 		081F9AE2174C384E000A00A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		081F9AE4174C3F11000A00A2 /* UIViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewUtil.h; sourceTree = "<group>"; };
 		081F9AE5174C3F11000A00A2 /* UIViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewUtil.m; sourceTree = "<group>"; };
-		08C200A417477575000D5408 /* 7-Minute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "7-Minute.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C200A417477575000D5408 /* SevenMinute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SevenMinute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C200A717477575000D5408 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		08C200A917477575000D5408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08C200AB17477575000D5408 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,7 +176,7 @@
 		08C200A517477575000D5408 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08C200A417477575000D5408 /* 7-Minute.app */,
+				08C200A417477575000D5408 /* SevenMinute.app */,
 				08C200CA17477576000D5408 /* sevenmin-appTests.octest */,
 			);
 			name = Products;
@@ -303,7 +303,7 @@
 			);
 			name = "sevenmin-app";
 			productName = "sevenmin-app";
-			productReference = 08C200A417477575000D5408 /* 7-Minute.app */;
+			productReference = 08C200A417477575000D5408 /* SevenMinute.app */;
 			productType = "com.apple.product-type.application";
 		};
 		08C200C917477576000D5408 /* sevenmin-appTests */ = {
@@ -534,7 +534,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sevenmin-app/sevenmin-app-Prefix.pch";
 				INFOPLIST_FILE = "sevenmin-app/sevenmin-app-Info.plist";
-				PRODUCT_NAME = "Seven-Minute";
+				PRODUCT_NAME = SevenMinute;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -547,7 +547,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sevenmin-app/sevenmin-app-Prefix.pch";
 				INFOPLIST_FILE = "sevenmin-app/sevenmin-app-Info.plist";
-				PRODUCT_NAME = "Seven-Minute";
+				PRODUCT_NAME = SevenMinute;
 				PROVISIONING_PROFILE = "9315FF98-D25B-4FE0-A9BA-9DC1F8D0B0C2";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9315FF98-D25B-4FE0-A9BA-9DC1F8D0B0C2";
 				WRAPPER_EXTENSION = app;
