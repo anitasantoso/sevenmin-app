@@ -17,8 +17,10 @@ typedef enum {
 + (TimerMgr*)sharedInstance;
 
 @property (nonatomic, copy) void(^workoutTimerCompleted)(void);
+@property (nonatomic, copy)void(^workoutTimerDidStart)(void);
+@property (nonatomic, copy)void(^workoutTimerDidStop)(void);
 @property (nonatomic, copy) void(^breakTimerCompleted)(void);
-@property (nonatomic, copy) void(^timerDidFire)(void);
+@property (nonatomic, copy) void(^timerDidFire)();
 
 @property (nonatomic) NSInteger totalDuration;
 - (void)beginSession;

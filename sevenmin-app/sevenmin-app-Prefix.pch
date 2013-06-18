@@ -15,8 +15,8 @@
 
 #define kNumOfWorkout 12
 #ifdef DEBUG
-    #define kWorkoutDuration 1
-    #define kBreakDuration 1
+    #define kWorkoutDuration 5
+    #define kBreakDuration 3
 #else
     #define kWorkoutDuration 30
     #define kBreakDuration 10

@@ -13,11 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIView *workoutContentView;
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
 @property (strong, nonatomic) IBOutlet UILabel *timerLabel;
-@property (strong, nonatomic) IBOutlet UIButton *infoButton;
-@property (strong, nonatomic) IBOutlet UIButton *menuButton;
 
 - (IBAction)startButtonPressed:(id)sender;
-- (IBAction)menuButtonPressed:(id)sender;
-- (IBAction)infoButtonPressed:(id)sender;
 
 @end

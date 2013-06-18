@@ -51,6 +51,7 @@ JTSYNTHESIZE_SINGLETON_FOR_CLASS(TimerMgr)
     [self stopWorkoutTimer];
     if(reset) {
         self.workoutSecondsRemaining = kWorkoutDuration;
+        self.workoutTimerDidStart();
     }
     self.workoutTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerExpired) userInfo:nil repeats:YES];
 }
@@ -75,23 +76,28 @@ JTSYNTHESIZE_SINGLETON_FOR_CLASS(TimerMgr)
     [self stopBreakTimer];
     if(reset) {
         self.breakSecondsRemaining = kBreakDuration;
+        self.workoutTimerDidStop();
     }
     self.breakTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerExpired) userInfo:nil repeats:YES];
 }
 
 - (void)timerExpired {
     if([self currentTimer] == TimerTypeBreak) {
-        self.breakSecondsRemaining--;
-        if(self.breakSecondsRemaining == -1) {
+        if(self.breakSecondsRemaining == 0) {
             self.breakTimerCompleted();
+        } else {
+            self.timerDidFire();
+            self.breakSecondsRemaining--;
         }
     } else {
-        self.workoutSecondsRemaining--;
-        if(self.workoutSecondsRemaining == -1) {
+        if(self.workoutSecondsRemaining == 0) {
             self.workoutTimerCompleted();
+        } else {
+            self.timerDidFire();
+            self.workoutSecondsRemaining--;
         }
     }
-    self.timerDidFire();
+
 }
 
 - (void)stopBreakTimer {

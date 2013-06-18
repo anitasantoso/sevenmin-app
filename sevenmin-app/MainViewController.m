@@ -12,13 +12,11 @@
 #import "TimerMgr.h"
 #import "WorkoutView.h"
 #import "StartOverlayView.h"
-#import <QuartzCore/QuartzCore.h>
 #import "UIViewUtil.h"
 #import "SoundMgr.h"
 
 @interface MainViewController()
 
-@property (nonatomic, strong) NSNumberFormatter *formatter;
 @property (nonatomic, strong) UIView *breakOverlayView;
 @property (nonatomic, strong) UIView *completedOverlayView;
 @property (nonatomic, strong) StartOverlayView *startOverlayView;
@@ -37,10 +35,18 @@
     [TimerMgr sharedInstance].workoutTimerCompleted = ^{
         [self updateTimerLabel];
     };
+    [TimerMgr sharedInstance].workoutTimerDidStart = ^{
+        // if sound is on
+        [[SoundMgr sharedInstance]playWhistleSound];
+    };
+    [TimerMgr sharedInstance].workoutTimerDidStop = ^{
+        // if sound is on
+        [[SoundMgr sharedInstance]playWhistleSound];
+    };
     [TimerMgr sharedInstance].breakTimerCompleted = ^{
         [self updateTimerLabel];        
     };
-    [TimerMgr sharedInstance].timerDidFire = ^{
+    [TimerMgr sharedInstance].timerDidFire = ^() {
         [self setTimerLabel];
     };
 
@@ -48,7 +54,6 @@
     
     // scroll view
     self.workoutView = [[[NSBundle mainBundle]loadNibNamed:@"WorkoutView" owner:nil options:nil]objectAtIndex:0];
-    self.workoutView.frame = self.fullscreen;
     [self.workoutContentView addSubview:self.workoutView];
     
     self.breakOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:0];
@@ -59,9 +64,6 @@
     
     [self.completedOverlayView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(overlayTapped:)]];
     
-    self.formatter = [[NSNumberFormatter alloc]init];
-    [self.formatter setMinimumIntegerDigits:2];
-
     [self setInitialState];
 }
 
@@ -79,8 +81,7 @@
 }
 
 - (void)setTimerLabel {
-    NSNumber *remaining = [NSNumber numberWithInt:[[TimerMgr sharedInstance]secondsRemaining]];
-    self.timerLabel.text = [NSString stringWithFormat:@"00:%@", [self.formatter stringFromNumber:remaining]];
+    self.timerLabel.text = [UIViewUtil formatToTime:[[TimerMgr sharedInstance]secondsRemaining]];
 }
 
 - (void)overlayTapped:(id)sender {
@@ -108,14 +109,11 @@
     if(self.buttonStateStart) {
         [self.startButton setTitle:@"Start" forState:UIControlStateNormal];
         [self.startButton setBackgroundImage:[UIImage imageNamed:@"start_button"] forState:UIControlStateNormal];
-        self.menuButton.hidden = NO;
-        self.infoButton.hidden = NO;
+        self.navigationItem.leftBarButtonItem.enabled = YES;
     } else {
         [self.startButton setTitle:@"Pause" forState:UIControlStateNormal];
         [self.startButton setBackgroundImage:[UIImage imageNamed:@"stop_button"] forState:UIControlStateNormal];
-
-        self.menuButton.hidden = YES;
-        self.infoButton.hidden = YES;
+        self.navigationItem.leftBarButtonItem.enabled = NO;
     }
 }
 
@@ -134,7 +132,7 @@
         [self.workoutView enableSwipe:NO];
         
         __block MainViewController *bself = self;
-        self.startOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:2];
+        self.startOverlayView = [MainViewController startOverlayView];
         self.startOverlayView.frame = self.fullscreen;
         
         self.startOverlayView.completionBlock = ^{
@@ -144,15 +142,16 @@
             bself.buttonStateStart = !bself.buttonStateStart;
             [bself setButtonState];
         };
-        [self.view addSubview:self.startOverlayView];
+        [UIViewUtil addOverlay:self.startOverlayView];
         [self.startOverlayView startCounter];
     }
     // stop button pressed
     else {
         [[TimerMgr sharedInstance]stopCurrentTimer];
-       
+        [[SoundMgr sharedInstance]stop];
+        
         // show pause overlay
-        PauseOverlayView *pauseView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:3];
+        PauseOverlayView *pauseView = [MainViewController pauseOverlayView];
         pauseView.frame = self.fullscreen;
         
         pauseView.doneBlock = ^{
@@ -162,7 +161,7 @@
         pauseView.resumeBlock = ^{
             [[TimerMgr sharedInstance]restartCurrentTimer];
         };
-        [self.view addSubview:pauseView];
+        [UIViewUtil addOverlay:pauseView];
     }
 }
 
@@ -172,7 +171,7 @@
     if([[TimerMgr sharedInstance]currentTimer] == TimerTypeWorkout) {
 
         // gray color
-        self.timerLabel.textColor = [UIColor colorWithRed:130.0/255.0 green:130.0/255.0 blue:130.0/255.0 alpha:1.0f];
+        self.timerLabel.textColor = [UIViewUtil grayColor];
         [self.workoutView nextWorkout];
 
         // stop timer if last workout
@@ -207,7 +206,7 @@
         }
         
         // TODO play sound here?
-        [[SoundMgr sharedInstance] playWhistleSound];
+        //        [[SoundMgr sharedInstance] playWhistleSound];
         
         // start break
         [[TimerMgr sharedInstance] startBreakTimer];
@@ -228,41 +227,49 @@
 
     // update timer label
     if([[TimerMgr sharedInstance]secondsRemaining] >= 0) {
-        self.timerLabel.text = [NSString stringWithFormat:@"00:%@", [self.formatter stringFromNumber:[NSNumber numberWithInt:[[TimerMgr sharedInstance]secondsRemaining]]]];
+        self.timerLabel.text = [UIViewUtil formatToTime:[[TimerMgr sharedInstance]secondsRemaining]];
     }
 }
 
-- (IBAction)menuButtonPressed:(id)sender {
-    RepPickerView *pickerView = [[[NSBundle mainBundle]loadNibNamed:@"RepPickerView" owner:nil options:nil]objectAtIndex:0];
-    pickerView.currentValue = self.workoutView.numOfReps;
-    pickerView.completionBlock = ^(NSInteger selectedValue) {
-        self.workoutView.numOfReps = selectedValue;
-        [self.workoutView resetRepIndex];
-        
-        // store in user defaults
-        [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithInt:selectedValue] forKey:kNumOfRepsKey];
-        [[NSUserDefaults standardUserDefaults]synchronize];
-    };
-    __block CGRect pickerFrame = pickerView.frame;
-    pickerFrame.origin = CGPointMake(0, [UIViewUtil screenSize].width);
-    pickerView.frame = pickerFrame;
-    [self.view addSubview:pickerView];
-    
-    [UIView animateWithDuration:0.2f animations:^{
-        pickerFrame.origin = CGPointMake(0, self.view.frame.size.height-pickerView.frame.size.height);
-        pickerView.frame = pickerFrame;
-    }];
+//- (IBAction)menuButtonPressed:(id)sender {
+//    RepPickerView *pickerView = [[[NSBundle mainBundle]loadNibNamed:@"RepPickerView" owner:nil options:nil]objectAtIndex:0];
+//    pickerView.currentValue = self.workoutView.numOfReps;
+//    pickerView.completionBlock = ^(NSInteger selectedValue) {
+//        self.workoutView.numOfReps = selectedValue;
+//        [self.workoutView resetRepIndex];
+//        
+//        // store in user defaults
+//        [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithInt:selectedValue] forKey:kNumOfRepsKey];
+//        [[NSUserDefaults standardUserDefaults]synchronize];
+//    };
+//    __block CGRect pickerFrame = pickerView.frame;
+//    pickerFrame.origin = CGPointMake(0, [UIViewUtil screenSize].width);
+//    pickerView.frame = pickerFrame;
+//    [self.view addSubview:pickerView];
+//    
+//    [UIView animateWithDuration:0.2f animations:^{
+//        pickerFrame.origin = CGPointMake(0, self.view.frame.size.height-pickerView.frame.size.height);
+//        pickerView.frame = pickerFrame;
+//    }];
+//}
+//
+//- (IBAction)infoButtonPressed:(id)sender {
+//    UIView *helpView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:4];
+//    helpView.frame = self.fullscreen;
+//    
+//    UIView *contentView = [helpView viewWithTag:20];
+//    contentView.layer.cornerRadius = 7.0f;
+//    
+//    [helpView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(overlayTapped:)]];
+//    [UIViewUtil addView:helpView toSuperview:self.view];
+//}
+
++ (PauseOverlayView*)pauseOverlayView {
+    return [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:3];
 }
 
-- (IBAction)infoButtonPressed:(id)sender {
-    UIView *helpView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:4];
-    helpView.frame = self.fullscreen;
-    
-    UIView *contentView = [helpView viewWithTag:20];
-    contentView.layer.cornerRadius = 7.0f;
-    
-    [helpView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(overlayTapped:)]];
-    [UIViewUtil addView:helpView toSuperview:self.view];
++ (StartOverlayView*)startOverlayView {
+    return [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:2];
 }
 
 @end

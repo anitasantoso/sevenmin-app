@@ -17,13 +17,18 @@
 JTSYNTHESIZE_SINGLETON_FOR_CLASS(SoundMgr)
 
 - (void)playWhistleSound {
-    NSURL *soundUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"whistle" ofType:@"mp3"]];
+    NSLog(@"Play sound");
+    NSURL *soundUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"whistle" ofType:@"m4a"]];
     
     NSError *error;
     self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:soundUrl error:&error];
     self.player.delegate = self;
     self.player.numberOfLoops = 0;
     [self.player play];
+}
+
+- (void)stop {
+    [self.player stop];
 }
 
 @end

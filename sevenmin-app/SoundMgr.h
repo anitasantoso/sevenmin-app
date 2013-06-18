@@ -15,4 +15,5 @@
 
 + (SoundMgr*)sharedInstance;
 - (void)playWhistleSound;
+- (void)stop;
 @end

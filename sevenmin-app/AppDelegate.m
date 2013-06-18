@@ -7,20 +7,53 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MFSideMenuContainerViewController.h"
 #import "MainViewController.h"
 
+@interface AppDelegate()
+@property (nonatomic, strong) MFSideMenuContainerViewController *containerViewCon;
+@end
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    // Override point for customization after application launch.
-    self.window.rootViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    // doesn't work?
+    [[UINavigationBar appearance]setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance]setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIColor whiteColor], UITextAttributeTextColor,
+      [UIFont fontWithName:@"Helvetica-Neue" size:12.0], UITextAttributeFont,nil]];
     
+    // load storyboard
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:[NSBundle mainBundle]];
+    
+    // side menu controller
+    UIViewController *leftViewCon = [storyboard instantiateViewControllerWithIdentifier:@"sideViewController"];
+
+    // main controller
+    UINavigationController *navCon = [storyboard instantiateViewControllerWithIdentifier:@"navigationController"];
+
+    // left bar button item
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [button setImage:[UIImage imageNamed:@"list_icon"] forState:UIControlStateNormal];
+    button.contentMode = UIViewContentModeLeft;
+    [button setBackgroundColor:[UIColor clearColor]];
+    [button addTarget:self action:@selector(openMenu) forControlEvents:UIControlEventTouchUpInside];
+    navCon.visibleViewController.navigationItem.leftBarButtonItem.customView = button;
+    
+    // container
+    self.containerViewCon = [MFSideMenuContainerViewController containerWithCenterViewController:navCon leftMenuViewController:leftViewCon rightMenuViewController:nil];
+    self.containerViewCon.menuWidth = 90.0f;
+    
+    self.window.rootViewController = self.containerViewCon;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)openMenu {
+    [self.containerViewCon toggleLeftSideMenuCompletion:nil];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
