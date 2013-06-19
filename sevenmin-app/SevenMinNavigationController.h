@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.h
+//  SevenMinNavigationController.h
 //  sevenmin-app
 //
 //  Created by Anita Santoso on 18/06/13.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewController : UIViewController
-
+@interface SevenMinNavigationController : UINavigationController
 
 @end

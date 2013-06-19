@@ -15,6 +15,19 @@
 		085FBEA0177063C4003C7A25 /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBE9F177063C4003C7A25 /* navbar@2x.png */; };
 		085FBEA317706AB0003C7A25 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBEA217706AB0003C7A25 /* SettingsViewController.m */; };
 		085FBEA517707373003C7A25 /* whistle.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEA417707373003C7A25 /* whistle.m4a */; };
+		085FBEA717709316003C7A25 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEA617709316003C7A25 /* settings.png */; };
+		085FBEAD17709749003C7A25 /* SevenMinNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBEAC17709749003C7A25 /* SevenMinNavigationController.m */; };
+		085FBEB11770999A003C7A25 /* workout_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEB01770999A003C7A25 /* workout_icon@2x.png */; };
+		085FBEB317709EF9003C7A25 /* workout_icon_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEB217709EF9003C7A25 /* workout_icon_sel@2x.png */; };
+		085FBEB51770A0AA003C7A25 /* settings_icon_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEB41770A0AA003C7A25 /* settings_icon_sel@2x.png */; };
+		085FBEB717712DFB003C7A25 /* about_icon_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEB617712DFB003C7A25 /* about_icon_sel@2x.png */; };
+		085FBEBB1771303F003C7A25 /* settings_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEBA1771303E003C7A25 /* settings_btn@2x.png */; };
+		085FBEBE177133E0003C7A25 /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBEBD177133DF003C7A25 /* SwitchCell.m */; };
+		085FBEC1177133F1003C7A25 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBEC0177133F0003C7A25 /* ButtonCell.m */; };
+		085FBEC417713738003C7A25 /* SettingsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBEC317713737003C7A25 /* SettingsUtil.m */; };
+		085FBEC717713C77003C7A25 /* clock_tick.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEC617713C77003C7A25 /* clock_tick.m4a */; };
+		085FBEC917718A21003C7A25 /* records_icon_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEC817718A21003C7A25 /* records_icon_sel@2x.png */; };
+		085FBECC17718F1B003C7A25 /* UIViewController+MenuContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBECB17718F1B003C7A25 /* UIViewController+MenuContainer.m */; };
 		08A89C1A176EF1F000A80266 /* SoundMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A89C19176EF1F000A80266 /* SoundMgr.m */; };
 		08A89C1E176EF2B600A80266 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A89C1D176EF2B600A80266 /* AVFoundation.framework */; };
 		08A89C24176FD3E100A80266 /* menu_icon_clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A89C23176FD3E100A80266 /* menu_icon_clock@2x.png */; };
@@ -47,8 +60,8 @@
 		08CA974E17487FD5003A37EE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA974A17487E0D003A37EE /* MainViewController.m */; };
 		08CA975217488721003A37EE /* list_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08CA975117488721003A37EE /* list_icon.png */; };
 		08CA975C1748A149003A37EE /* WorkoutSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA975B1748A149003A37EE /* WorkoutSession.m */; };
-		08CA97671748A88B003A37EE /* RepPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CA97661748A88B003A37EE /* RepPickerView.xib */; };
-		08CA976A1748A8FE003A37EE /* RepPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA97691748A8FE003A37EE /* RepPickerView.m */; };
+		08CA97671748A88B003A37EE /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CA97661748A88B003A37EE /* PickerView.xib */; };
+		08CA976A1748A8FE003A37EE /* PickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA97691748A8FE003A37EE /* PickerView.m */; };
 		08DBD461174B60EF000A297D /* PauseOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBD460174B60EF000A297D /* PauseOverlayView.m */; };
 		08DBD464174B62B2000A297D /* TimerMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBD463174B62B1000A297D /* TimerMgr.m */; };
 		08DBD46C174B6D4C000A297D /* WorkoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD46B174B6D4C000A297D /* WorkoutView.xib */; };
@@ -93,6 +106,24 @@
 		085FBEA117706AB0003C7A25 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		085FBEA217706AB0003C7A25 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		085FBEA417707373003C7A25 /* whistle.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = whistle.m4a; sourceTree = "<group>"; };
+		085FBEA617709316003C7A25 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		085FBEAB17709749003C7A25 /* SevenMinNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenMinNavigationController.h; sourceTree = "<group>"; };
+		085FBEAC17709749003C7A25 /* SevenMinNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenMinNavigationController.m; sourceTree = "<group>"; };
+		085FBEB01770999A003C7A25 /* workout_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout_icon@2x.png"; sourceTree = "<group>"; };
+		085FBEB217709EF9003C7A25 /* workout_icon_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout_icon_sel@2x.png"; sourceTree = "<group>"; };
+		085FBEB41770A0AA003C7A25 /* settings_icon_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_icon_sel@2x.png"; sourceTree = "<group>"; };
+		085FBEB617712DFB003C7A25 /* about_icon_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about_icon_sel@2x.png"; sourceTree = "<group>"; };
+		085FBEBA1771303E003C7A25 /* settings_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_btn@2x.png"; sourceTree = "<group>"; };
+		085FBEBC177133DF003C7A25 /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchCell.h; sourceTree = "<group>"; };
+		085FBEBD177133DF003C7A25 /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
+		085FBEBF177133F0003C7A25 /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCell.h; sourceTree = "<group>"; };
+		085FBEC0177133F0003C7A25 /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
+		085FBEC217713737003C7A25 /* SettingsUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsUtil.h; sourceTree = "<group>"; };
+		085FBEC317713737003C7A25 /* SettingsUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsUtil.m; sourceTree = "<group>"; };
+		085FBEC617713C77003C7A25 /* clock_tick.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = clock_tick.m4a; sourceTree = "<group>"; };
+		085FBEC817718A21003C7A25 /* records_icon_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "records_icon_sel@2x.png"; sourceTree = "<group>"; };
+		085FBECA17718F1A003C7A25 /* UIViewController+MenuContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MenuContainer.h"; sourceTree = "<group>"; };
+		085FBECB17718F1B003C7A25 /* UIViewController+MenuContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MenuContainer.m"; sourceTree = "<group>"; };
 		08A89C18176EF1F000A80266 /* SoundMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundMgr.h; sourceTree = "<group>"; };
 		08A89C19176EF1F000A80266 /* SoundMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundMgr.m; sourceTree = "<group>"; };
 		08A89C1D176EF2B600A80266 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -134,9 +165,9 @@
 		08CA975117488721003A37EE /* list_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_icon.png; sourceTree = "<group>"; };
 		08CA975A1748A149003A37EE /* WorkoutSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutSession.h; sourceTree = "<group>"; };
 		08CA975B1748A149003A37EE /* WorkoutSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutSession.m; sourceTree = "<group>"; };
-		08CA97661748A88B003A37EE /* RepPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepPickerView.xib; sourceTree = "<group>"; };
-		08CA97681748A8FE003A37EE /* RepPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepPickerView.h; sourceTree = "<group>"; };
-		08CA97691748A8FE003A37EE /* RepPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepPickerView.m; sourceTree = "<group>"; };
+		08CA97661748A88B003A37EE /* PickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
+		08CA97681748A8FE003A37EE /* PickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerView.h; sourceTree = "<group>"; };
+		08CA97691748A8FE003A37EE /* PickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerView.m; sourceTree = "<group>"; };
 		08DBD45F174B60EF000A297D /* PauseOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseOverlayView.h; sourceTree = "<group>"; };
 		08DBD460174B60EF000A297D /* PauseOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseOverlayView.m; sourceTree = "<group>"; };
 		08DBD462174B62B1000A297D /* TimerMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerMgr.h; sourceTree = "<group>"; };
@@ -192,10 +223,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		085FBEC517713741003C7A25 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				08046B57174994C600F3324D /* UIView+Position.h */,
+				08046B58174994C600F3324D /* UIView+Position.m */,
+				08A89C18176EF1F000A80266 /* SoundMgr.h */,
+				08A89C19176EF1F000A80266 /* SoundMgr.m */,
+				08DBD465174B68AE000A297D /* JTSingleton.h */,
+				081F9AE4174C3F11000A00A2 /* UIViewUtil.h */,
+				081F9AE5174C3F11000A00A2 /* UIViewUtil.m */,
+				085FBEC217713737003C7A25 /* SettingsUtil.h */,
+				085FBEC317713737003C7A25 /* SettingsUtil.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		08A89C3F17705C2000A80266 /* UI Files */ = {
 			isa = PBXGroup;
 			children = (
-				08CA97661748A88B003A37EE /* RepPickerView.xib */,
+				08CA97661748A88B003A37EE /* PickerView.xib */,
 				08DBD474174B95D5000A297D /* OverlayView.xib */,
 				08DBD46B174B6D4C000A297D /* WorkoutView.xib */,
 				08A89C3A17705A5100A80266 /* MainStoryboard.storyboard */,
@@ -242,20 +289,18 @@
 		08C200AD17477575000D5408 /* sevenmin-app */ = {
 			isa = PBXGroup;
 			children = (
-				08046B57174994C600F3324D /* UIView+Position.h */,
-				08046B58174994C600F3324D /* UIView+Position.m */,
-				08A89C3F17705C2000A80266 /* UI Files */,
 				08C200E4174872EB000D5408 /* resources */,
+				085FBEC517713741003C7A25 /* Utils */,
+				08A89C3F17705C2000A80266 /* UI Files */,
 				08C200AE17477575000D5408 /* Supporting Files */,
 				08C200B617477575000D5408 /* AppDelegate.h */,
 				08C200B717477575000D5408 /* AppDelegate.m */,
-				08DBD465174B68AE000A297D /* JTSingleton.h */,
 				08CA974917487E0D003A37EE /* MainViewController.h */,
 				08CA974A17487E0D003A37EE /* MainViewController.m */,
 				08CA975A1748A149003A37EE /* WorkoutSession.h */,
 				08CA975B1748A149003A37EE /* WorkoutSession.m */,
-				08CA97681748A8FE003A37EE /* RepPickerView.h */,
-				08CA97691748A8FE003A37EE /* RepPickerView.m */,
+				08CA97681748A8FE003A37EE /* PickerView.h */,
+				08CA97691748A8FE003A37EE /* PickerView.m */,
 				08DBD45F174B60EF000A297D /* PauseOverlayView.h */,
 				08DBD460174B60EF000A297D /* PauseOverlayView.m */,
 				08DBD462174B62B1000A297D /* TimerMgr.h */,
@@ -264,14 +309,18 @@
 				08DBD46E174B6D83000A297D /* WorkoutView.m */,
 				08DBD476174B9780000A297D /* StartOverlayView.h */,
 				08DBD477174B9780000A297D /* StartOverlayView.m */,
-				081F9AE4174C3F11000A00A2 /* UIViewUtil.h */,
-				081F9AE5174C3F11000A00A2 /* UIViewUtil.m */,
-				08A89C18176EF1F000A80266 /* SoundMgr.h */,
-				08A89C19176EF1F000A80266 /* SoundMgr.m */,
 				08A89C3C17705B8300A80266 /* SideMenuViewController.h */,
 				08A89C3D17705B8500A80266 /* SideMenuViewController.m */,
 				085FBEA117706AB0003C7A25 /* SettingsViewController.h */,
 				085FBEA217706AB0003C7A25 /* SettingsViewController.m */,
+				085FBEAB17709749003C7A25 /* SevenMinNavigationController.h */,
+				085FBEAC17709749003C7A25 /* SevenMinNavigationController.m */,
+				085FBEBC177133DF003C7A25 /* SwitchCell.h */,
+				085FBEBD177133DF003C7A25 /* SwitchCell.m */,
+				085FBEBF177133F0003C7A25 /* ButtonCell.h */,
+				085FBEC0177133F0003C7A25 /* ButtonCell.m */,
+				085FBECA17718F1A003C7A25 /* UIViewController+MenuContainer.h */,
+				085FBECB17718F1B003C7A25 /* UIViewController+MenuContainer.m */,
 			);
 			path = "sevenmin-app";
 			sourceTree = "<group>";
@@ -312,7 +361,14 @@
 		08C200E4174872EB000D5408 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				085FBEC617713C77003C7A25 /* clock_tick.m4a */,
 				085FBEA417707373003C7A25 /* whistle.m4a */,
+				085FBEC817718A21003C7A25 /* records_icon_sel@2x.png */,
+				085FBEB617712DFB003C7A25 /* about_icon_sel@2x.png */,
+				085FBEB41770A0AA003C7A25 /* settings_icon_sel@2x.png */,
+				085FBEB217709EF9003C7A25 /* workout_icon_sel@2x.png */,
+				085FBEB01770999A003C7A25 /* workout_icon@2x.png */,
+				085FBEA617709316003C7A25 /* settings.png */,
 				085FBE9F177063C4003C7A25 /* navbar@2x.png */,
 				08A89C381770510F00A80266 /* about_icon@2x.png */,
 				08A89C341770507100A80266 /* records_icon@2x.png */,
@@ -320,6 +376,7 @@
 				08A89C27176FD7B400A80266 /* menu_icon_settings@2x.png */,
 				08A89C25176FD5E500A80266 /* menu_icon_chart@2x.png */,
 				08A89C23176FD3E100A80266 /* menu_icon_clock@2x.png */,
+				085FBEBA1771303E003C7A25 /* settings_btn@2x.png */,
 				08DBD48B174B9EB9000A297D /* start_button.png */,
 				08DBD48C174B9EB9000A297D /* start_button@2x.png */,
 				08DBD48D174B9EB9000A297D /* stop_button.png */,
@@ -426,7 +483,7 @@
 				08C200EC1748730F000D5408 /* clock.png in Resources */,
 				08C200F217487689000D5408 /* clock@2x.png in Resources */,
 				08CA975217488721003A37EE /* list_icon.png in Resources */,
-				08CA97671748A88B003A37EE /* RepPickerView.xib in Resources */,
+				08CA97671748A88B003A37EE /* PickerView.xib in Resources */,
 				08DBD46C174B6D4C000A297D /* WorkoutView.xib in Resources */,
 				08DBD475174B95D6000A297D /* OverlayView.xib in Resources */,
 				08DBD482174B9E8A000A297D /* ex12.png in Resources */,
@@ -453,6 +510,14 @@
 				08A89C3B17705A5500A80266 /* MainStoryboard.storyboard in Resources */,
 				085FBEA0177063C4003C7A25 /* navbar@2x.png in Resources */,
 				085FBEA517707373003C7A25 /* whistle.m4a in Resources */,
+				085FBEA717709316003C7A25 /* settings.png in Resources */,
+				085FBEB11770999A003C7A25 /* workout_icon@2x.png in Resources */,
+				085FBEB317709EF9003C7A25 /* workout_icon_sel@2x.png in Resources */,
+				085FBEB51770A0AA003C7A25 /* settings_icon_sel@2x.png in Resources */,
+				085FBEB717712DFB003C7A25 /* about_icon_sel@2x.png in Resources */,
+				085FBEBB1771303F003C7A25 /* settings_btn@2x.png in Resources */,
+				085FBEC717713C77003C7A25 /* clock_tick.m4a in Resources */,
+				085FBEC917718A21003C7A25 /* records_icon_sel@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +584,7 @@
 				08C200B417477575000D5408 /* main.m in Sources */,
 				08C200B817477575000D5408 /* AppDelegate.m in Sources */,
 				08CA975C1748A149003A37EE /* WorkoutSession.m in Sources */,
-				08CA976A1748A8FE003A37EE /* RepPickerView.m in Sources */,
+				08CA976A1748A8FE003A37EE /* PickerView.m in Sources */,
 				08046B59174994C600F3324D /* UIView+Position.m in Sources */,
 				08DBD461174B60EF000A297D /* PauseOverlayView.m in Sources */,
 				08DBD464174B62B2000A297D /* TimerMgr.m in Sources */,
@@ -529,6 +594,11 @@
 				08A89C1A176EF1F000A80266 /* SoundMgr.m in Sources */,
 				08A89C3E17705B8700A80266 /* SideMenuViewController.m in Sources */,
 				085FBEA317706AB0003C7A25 /* SettingsViewController.m in Sources */,
+				085FBEAD17709749003C7A25 /* SevenMinNavigationController.m in Sources */,
+				085FBEBE177133E0003C7A25 /* SwitchCell.m in Sources */,
+				085FBEC1177133F1003C7A25 /* ButtonCell.m in Sources */,
+				085FBEC417713738003C7A25 /* SettingsUtil.m in Sources */,
+				085FBECC17718F1B003C7A25 /* UIViewController+MenuContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

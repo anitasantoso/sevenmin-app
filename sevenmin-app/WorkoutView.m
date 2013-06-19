@@ -7,6 +7,8 @@
 //
 
 #import "WorkoutView.h"
+#import "SettingsUtil.h"
+
 #define kScrollViewHeight 210
 
 @interface WorkoutView()
@@ -52,8 +54,7 @@
     [self.scrollView scrollRectToVisible:CGRectMake(0, self.scrollView.frame.origin.y, [UIViewUtil screenSize].width, kScrollViewHeight) animated:YES];
     
     // remember number of reps from previous session
-    NSInteger numOfReps = [[[NSUserDefaults standardUserDefaults]valueForKey:kNumOfRepsKey]intValue];
-    self.numOfReps = numOfReps == 0? kDefaultNumOfReps : numOfReps;
+    self.numOfReps = [SettingsUtil sharedInstance].numberOfReps;
 }
 
 - (void)showNextWorkout {

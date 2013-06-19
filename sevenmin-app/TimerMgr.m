@@ -7,6 +7,7 @@
 //
 
 #import "TimerMgr.h"
+#import "SettingsUtil.h"
 
 @interface TimerMgr()
 @property (nonatomic, strong) NSTimer *workoutTimer;
@@ -21,6 +22,8 @@
 @implementation TimerMgr
 
 JTSYNTHESIZE_SINGLETON_FOR_CLASS(TimerMgr)
+
+// TODO read duration from settings
 
 - (id)init {
     if(self = [super init]) {
@@ -50,15 +53,16 @@ JTSYNTHESIZE_SINGLETON_FOR_CLASS(TimerMgr)
 - (void)startWorkoutTimerAndReset:(BOOL)reset {
     [self stopWorkoutTimer];
     if(reset) {
-        self.workoutSecondsRemaining = kWorkoutDuration;
+        self.workoutSecondsRemaining = [SettingsUtil sharedInstance].workoutDuration;
         self.workoutTimerDidStart();
     }
+    self.timerDidFire();
     self.workoutTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerExpired) userInfo:nil repeats:YES];
 }
 
 - (void)reset {
-    self.workoutSecondsRemaining = kWorkoutDuration;
-    self.breakSecondsRemaining = kBreakDuration;
+    self.workoutSecondsRemaining = [SettingsUtil sharedInstance].workoutDuration;
+    self.breakSecondsRemaining = [SettingsUtil sharedInstance].breakDuration;
     [self stopBreakTimer];
     [self stopWorkoutTimer];
 }
@@ -75,29 +79,26 @@ JTSYNTHESIZE_SINGLETON_FOR_CLASS(TimerMgr)
 - (void)startBreakTimerAndReset:(BOOL)reset {
     [self stopBreakTimer];
     if(reset) {
-        self.breakSecondsRemaining = kBreakDuration;
+        self.breakSecondsRemaining = [SettingsUtil sharedInstance].breakDuration;
         self.workoutTimerDidStop();
     }
+    self.timerDidFire();
     self.breakTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerExpired) userInfo:nil repeats:YES];
 }
 
 - (void)timerExpired {
     if([self currentTimer] == TimerTypeBreak) {
-        if(self.breakSecondsRemaining == 0) {
+        self.breakSecondsRemaining--;
+        if(self.breakSecondsRemaining == -1) {
             self.breakTimerCompleted();
-        } else {
-            self.timerDidFire();
-            self.breakSecondsRemaining--;
         }
     } else {
-        if(self.workoutSecondsRemaining == 0) {
+        self.workoutSecondsRemaining--;
+        if(self.workoutSecondsRemaining == -1) {
             self.workoutTimerCompleted();
-        } else {
-            self.timerDidFire();
-            self.workoutSecondsRemaining--;
         }
     }
-
+    self.timerDidFire();
 }
 
 - (void)stopBreakTimer {

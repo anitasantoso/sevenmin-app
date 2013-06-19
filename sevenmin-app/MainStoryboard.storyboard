@@ -5,48 +5,121 @@
     </dependencies>
     <scenes>
         <!--Settings View Controller - Settings-->
-        <scene sceneID="3NO-kr-i7o">
+        <scene sceneID="ma4-6p-kQe">
             <objects>
-                <viewController storyboardIdentifier="settingsViewController" title="Settings" id="Qgj-EN-KVQ" customClass="SettingsViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yDt-4p-ZW1">
+                <tableViewController storyboardIdentifier="settingsViewController" title="Settings" id="eBl-a9-rdV" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" dataMode="prototypes" style="plain" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vpW-JY-UbN">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="switchCell" rowHeight="55" id="sdw-z1-h4i" customClass="SwitchCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="55"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dO2-QJ-bHJ">
+                                            <rect key="frame" x="13" y="17" width="200" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="Wdg-os-Lzj">
+                                            <rect key="frame" x="232" y="13" width="79" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="onTintColor" red="0.92941176889999999" green="0.60784316059999999" blue="0.37254902719999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <connections>
+                                                <action selector="switchValueChanged:" destination="sdw-z1-h4i" eventType="valueChanged" id="flG-1E-nRs"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="textLabel" destination="dO2-QJ-bHJ" id="woQ-ud-aPV"/>
+                                    <outlet property="valueSwitch" destination="Wdg-os-Lzj" id="5X1-dO-ARk"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="buttonCell" rowHeight="55" id="bKa-ds-474" customClass="ButtonCell">
+                                <rect key="frame" x="0.0" y="77" width="320" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hOh-xF-RcZ">
+                                            <rect key="frame" x="14" y="17" width="200" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Y6J-Zz-efE">
+                                            <rect key="frame" x="229" y="10" width="82" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="Button" backgroundImage="settings_btn@2x.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="buttonPressed:" destination="bKa-ds-474" eventType="touchUpInside" id="mcI-Xl-KF9"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="textLabel" destination="hOh-xF-RcZ" id="4gK-VH-AD8"/>
+                                    <outlet property="valueButton" destination="Y6J-Zz-efE" id="V96-oe-2aD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eBl-a9-rdV" id="W3Z-kK-EdP"/>
+                            <outlet property="delegate" destination="eBl-a9-rdV" id="ogb-8E-zcZ"/>
+                        </connections>
+                    </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fy8-Ki-vaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-161" y="-1419"/>
+        </scene>
+        <!--View Controller - Records-->
+        <scene sceneID="V4A-Wv-L1G">
+            <objects>
+                <viewController storyboardIdentifier="recordsViewController" title="Records" id="rxc-cH-vGe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ajc-e9-H67">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Clock sound" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WKp-Ol-MkL">
-                                <rect key="frame" x="20" y="34" width="94" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Coming soon!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rgz-Bt-cJE">
+                                <rect key="frame" x="76" y="153" width="169" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Whistle sound" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JlX-J7-2pz">
-                                <rect key="frame" x="20" y="74" width="107" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="IdO-ce-iuq">
-                                <rect key="frame" x="223" y="34" width="79" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="QD6-Hp-KNK">
-                                <rect key="frame" x="221" y="71" width="79" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kEw-8q-TCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJb-Uf-ppb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="-1409"/>
+            <point key="canvasLocation" x="331" y="-1442"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Seven Min Navigation Controller-->
         <scene sceneID="Nem-2m-1qX">
             <objects>
-                <navigationController storyboardIdentifier="navigationController" definesPresentationContext="YES" id="pab-Tr-DdR" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigationController" definesPresentationContext="YES" id="pab-Tr-DdR" customClass="SevenMinNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="pwb-EZ-Fdj">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -69,10 +142,26 @@
                             <view contentMode="scaleToFill" id="daQ-Vi-nTr">
                                 <rect key="frame" x="0.0" y="0.0" width="90" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
-                                <color key="backgroundColor" red="0.82352942230000004" green="0.82352942230000004" blue="0.81960785390000002" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.13725490868091583" green="0.14901961386203766" blue="0.15686275064945221" alpha="1" colorSpace="deviceRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="JxO-on-eMc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="4qv-Cj-T02">
                                 <rect key="frame" x="0.0" y="44" width="90" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94509804249999996" green="0.94509804249999996" blue="0.94117647410000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="workout_icon_sel@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="workoutPressed:" destination="6Di-Li-DCF" eventType="touchUpInside" id="YFb-hy-bCY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="JxO-on-eMc">
+                                <rect key="frame" x="0.0" y="117" width="90" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94509804249999996" green="0.94509804249999996" blue="0.94117647410000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -88,7 +177,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="TAi-Ec-3SW">
-                                <rect key="frame" x="0.0" y="117" width="90" height="71"/>
+                                <rect key="frame" x="0.0" y="190" width="90" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94509804249999996" green="0.94509804249999996" blue="0.94117647410000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -104,7 +193,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="gwG-ME-sJ1">
-                                <rect key="frame" x="0.0" y="190" width="90" height="71"/>
+                                <rect key="frame" x="0.0" y="263" width="90" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94509804249999996" green="0.94509804249999996" blue="0.94117647410000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -124,6 +213,12 @@
                         <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="aboutButton" destination="gwG-ME-sJ1" id="9km-0X-7sf"/>
+                        <outlet property="recordsButton" destination="TAi-Ec-3SW" id="SaT-vl-My6"/>
+                        <outlet property="settingsButton" destination="JxO-on-eMc" id="qsz-e0-oQN"/>
+                        <outlet property="workoutButton" destination="4qv-Cj-T02" id="3jm-uc-rbj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sqq-yz-g3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +227,7 @@
         <!--Main View Controller - 7-Minute Workout-->
         <scene sceneID="gWb-dm-knd">
             <objects>
-                <viewController storyboardIdentifier="mainViewController" id="v1i-0U-pFx" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="workoutViewController" id="v1i-0U-pFx" customClass="MainViewController" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Wh7-Sd-lYW">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,25 +297,25 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ae9-bC-rJZ">
-                                <rect key="frame" x="20" y="38" width="280" height="451"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <mutableString key="text">In 12 exercises deploying only body weight, a chair and a wall, it fulfills the latest mandates for high-intensity effort, which essentially combines a long run and a visit to the weight room into about seven minutes of steady discomfort — all of it based on science.  
-
-The exercises should be performed in rapid succession, allowing 30 seconds for each, while, throughout, the intensity hovers at about an 8 on a discomfort scale of 1 to 10. Those seven minutes should be, in a word, unpleasant. The upside is, after seven minutes, you’re done. 
-
-All images and excerpts are taken from The New York Times.</mutableString>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="7 Minute Workout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="scx-jl-LgF">
-                                <rect key="frame" x="29" y="10" width="263" height="31"/>
+                                <rect key="frame" x="26" y="10" width="263" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.29926215280000001" green="0.29926215280000001" blue="0.29926215280000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" editable="NO" id="ae9-bC-rJZ">
+                                <rect key="frame" x="17" y="42" width="280" height="451"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <string key="text">In 12 exercises deploying only body weight, a chair and a wall, it fulfills the latest mandates for high-intensity effort, which essentially combines a long run and a visit to the weight room into about seven minutes of steady discomfort — all of it based on science.  
+
+The exercises should be performed in rapid succession, allowing 30 seconds for each, while, throughout, the intensity hovers at about an 8 on a discomfort scale of 1 to 10. Those seven minutes should be, in a word, unpleasant. The upside is, after seven minutes, you’re done. 
+
+All images and excerpts are taken from The New York Times.</string>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -237,10 +332,20 @@ All images and excerpts are taken from The New York Times.</mutableString>
         <image name="clock.png" width="25" height="25"/>
         <image name="list_icon.png" width="16" height="15"/>
         <image name="records_icon@2x.png" width="180" height="140"/>
+        <image name="settings_btn@2x.png" width="164" height="68"/>
         <image name="settings_icon@2x.png" width="180" height="140"/>
         <image name="start_button.png" width="170" height="50"/>
+        <image name="workout_icon_sel@2x.png" width="180" height="140"/>
     </resources>
     <classes>
+        <class className="ButtonCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ButtonCell.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="outlet" name="textLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="valueButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
         <class className="MainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
             <relationships>
@@ -253,12 +358,28 @@ All images and excerpts are taken from The New York Times.</mutableString>
         <class className="SettingsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
         </class>
+        <class className="SevenMinNavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SevenMinNavigationController.h"/>
+        </class>
         <class className="SideMenuViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SideMenuViewController.h"/>
             <relationships>
                 <relationship kind="action" name="aboutPressed:"/>
                 <relationship kind="action" name="recordsPressed:"/>
                 <relationship kind="action" name="settingsPressed:"/>
+                <relationship kind="action" name="workoutPressed:"/>
+                <relationship kind="outlet" name="aboutButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="recordsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="settingsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="workoutButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="SwitchCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SwitchCell.h"/>
+            <relationships>
+                <relationship kind="action" name="switchValueChanged:"/>
+                <relationship kind="outlet" name="textLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="valueSwitch" candidateClass="UISwitch"/>
             </relationships>
         </class>
     </classes>

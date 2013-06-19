@@ -7,13 +7,15 @@
 //
 
 #import "MainViewController.h"
-#import "RepPickerView.h"
+#import "PickerView.h"
 #import "PauseOverlayView.h"
 #import "TimerMgr.h"
 #import "WorkoutView.h"
 #import "StartOverlayView.h"
 #import "UIViewUtil.h"
 #import "SoundMgr.h"
+#import "SettingsUtil.h"
+#import "UIViewController+MenuContainer.h"
 
 @interface MainViewController()
 
@@ -25,28 +27,37 @@
 @property BOOL buttonStateStart;
 @end
 
-
 @implementation MainViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    void(^playWhistleSound)(void) = ^{
+        // if sound is enabled
+        BOOL whistleSoundEnabled = [SettingsUtil sharedInstance].whistleSoundEnabled;
+        if(whistleSoundEnabled) {
+            [[SoundMgr sharedInstance]playWhistleSound];
+        }
+    };
+    [TimerMgr sharedInstance].workoutTimerDidStart = ^{
+        playWhistleSound();
+    };
+    [TimerMgr sharedInstance].workoutTimerDidStop = ^{
+        playWhistleSound();
+    };
     
     [TimerMgr sharedInstance].workoutTimerCompleted = ^{
         [self updateTimerLabel];
-    };
-    [TimerMgr sharedInstance].workoutTimerDidStart = ^{
-        // if sound is on
-        [[SoundMgr sharedInstance]playWhistleSound];
-    };
-    [TimerMgr sharedInstance].workoutTimerDidStop = ^{
-        // if sound is on
-        [[SoundMgr sharedInstance]playWhistleSound];
     };
     [TimerMgr sharedInstance].breakTimerCompleted = ^{
         [self updateTimerLabel];        
     };
     [TimerMgr sharedInstance].timerDidFire = ^() {
+        BOOL tickSoundEnabled = [SettingsUtil sharedInstance].clockSoundEnabled;
+        if(tickSoundEnabled) {
+            [[SoundMgr sharedInstance]playTickingSound];
+        }
         [self setTimerLabel];
     };
 
@@ -106,15 +117,11 @@
 }
 
 - (void)setButtonState {
-    if(self.buttonStateStart) {
-        [self.startButton setTitle:@"Start" forState:UIControlStateNormal];
-        [self.startButton setBackgroundImage:[UIImage imageNamed:@"start_button"] forState:UIControlStateNormal];
-        self.navigationItem.leftBarButtonItem.enabled = YES;
-    } else {
-        [self.startButton setTitle:@"Pause" forState:UIControlStateNormal];
-        [self.startButton setBackgroundImage:[UIImage imageNamed:@"stop_button"] forState:UIControlStateNormal];
-        self.navigationItem.leftBarButtonItem.enabled = NO;
-    }
+    [self.startButton setTitle:self.buttonStateStart? @"Start" : @"Pause" forState:UIControlStateNormal];
+    [self.startButton setBackgroundImage:[UIImage imageNamed:self.buttonStateStart? @"start_button" : @"stop_button"] forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem.enabled = self.buttonStateStart;
+    
+    [self menuContainerViewController].panMode = self.startButton? MFSideMenuPanModeNone : MFSideMenuPanModeDefault;
 }
 
 - (BOOL)isStartButton {
@@ -122,6 +129,7 @@
     return [title isEqualToString:@"Start"];
 }
 
+// TODO TODO disable swipe gesture when timer is running!
 - (IBAction)startButtonPressed:(id)sender {
     
     // start button pressed
@@ -205,9 +213,6 @@
             [[TimerMgr sharedInstance] stopWorkoutTimer];
         }
         
-        // TODO play sound here?
-        //        [[SoundMgr sharedInstance] playWhistleSound];
-        
         // start break
         [[TimerMgr sharedInstance] startBreakTimer];
         [self.workoutView.mainContentView addSubview:self.breakOverlayView];
@@ -230,39 +235,6 @@
         self.timerLabel.text = [UIViewUtil formatToTime:[[TimerMgr sharedInstance]secondsRemaining]];
     }
 }
-
-//- (IBAction)menuButtonPressed:(id)sender {
-//    RepPickerView *pickerView = [[[NSBundle mainBundle]loadNibNamed:@"RepPickerView" owner:nil options:nil]objectAtIndex:0];
-//    pickerView.currentValue = self.workoutView.numOfReps;
-//    pickerView.completionBlock = ^(NSInteger selectedValue) {
-//        self.workoutView.numOfReps = selectedValue;
-//        [self.workoutView resetRepIndex];
-//        
-//        // store in user defaults
-//        [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithInt:selectedValue] forKey:kNumOfRepsKey];
-//        [[NSUserDefaults standardUserDefaults]synchronize];
-//    };
-//    __block CGRect pickerFrame = pickerView.frame;
-//    pickerFrame.origin = CGPointMake(0, [UIViewUtil screenSize].width);
-//    pickerView.frame = pickerFrame;
-//    [self.view addSubview:pickerView];
-//    
-//    [UIView animateWithDuration:0.2f animations:^{
-//        pickerFrame.origin = CGPointMake(0, self.view.frame.size.height-pickerView.frame.size.height);
-//        pickerView.frame = pickerFrame;
-//    }];
-//}
-//
-//- (IBAction)infoButtonPressed:(id)sender {
-//    UIView *helpView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:4];
-//    helpView.frame = self.fullscreen;
-//    
-//    UIView *contentView = [helpView viewWithTag:20];
-//    contentView.layer.cornerRadius = 7.0f;
-//    
-//    [helpView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(overlayTapped:)]];
-//    [UIViewUtil addView:helpView toSuperview:self.view];
-//}
 
 + (PauseOverlayView*)pauseOverlayView {
     return [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:3];

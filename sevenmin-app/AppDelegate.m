@@ -26,6 +26,8 @@
       [UIColor whiteColor], UITextAttributeTextColor,
       [UIFont fontWithName:@"Helvetica-Neue" size:12.0], UITextAttributeFont,nil]];
     
+    [[UIBarButtonItem appearance]setBackButtonBackgroundImage:[UIImage imageNamed:@"navbar"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
     // load storyboard
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:[NSBundle mainBundle]];
     
@@ -34,14 +36,6 @@
 
     // main controller
     UINavigationController *navCon = [storyboard instantiateViewControllerWithIdentifier:@"navigationController"];
-
-    // left bar button item
-    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
-    [button setImage:[UIImage imageNamed:@"list_icon"] forState:UIControlStateNormal];
-    button.contentMode = UIViewContentModeLeft;
-    [button setBackgroundColor:[UIColor clearColor]];
-    [button addTarget:self action:@selector(openMenu) forControlEvents:UIControlEventTouchUpInside];
-    navCon.visibleViewController.navigationItem.leftBarButtonItem.customView = button;
     
     // container
     self.containerViewCon = [MFSideMenuContainerViewController containerWithCenterViewController:navCon leftMenuViewController:leftViewCon rightMenuViewController:nil];
