@@ -11,7 +11,10 @@
 @implementation UIViewController (MenuContainer)
 
 - (MFSideMenuContainerViewController *)menuContainerViewController {
-    return (MFSideMenuContainerViewController *)self.parentViewController;
+    if(!self.navigationController) {
+        return (MFSideMenuContainerViewController *)self.parentViewController;
+    }
+    return (MFSideMenuContainerViewController *)self.navigationController.parentViewController;
 }
 
 @end

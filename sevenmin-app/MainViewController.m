@@ -121,7 +121,8 @@
     [self.startButton setBackgroundImage:[UIImage imageNamed:self.buttonStateStart? @"start_button" : @"stop_button"] forState:UIControlStateNormal];
     self.navigationItem.leftBarButtonItem.enabled = self.buttonStateStart;
     
-    [self menuContainerViewController].panMode = self.startButton? MFSideMenuPanModeNone : MFSideMenuPanModeDefault;
+    // disable pan gesture when timer is running
+    [self menuContainerViewController].panMode = self.buttonStateStart? MFSideMenuPanModeDefault : MFSideMenuPanModeNone;
 }
 
 - (BOOL)isStartButton {

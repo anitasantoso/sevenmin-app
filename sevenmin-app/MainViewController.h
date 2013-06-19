@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController<UIScrollViewDelegate, UIActionSheetDelegate>
+@interface MainViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIView *workoutContentView;
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
