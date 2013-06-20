@@ -23,16 +23,43 @@
 @property (nonatomic, strong) UIView *completedOverlayView;
 @property (nonatomic, strong) StartOverlayView *startOverlayView;
 @property (nonatomic, strong) WorkoutView *workoutView;
-@property CGRect fullscreen;
 @property BOOL buttonStateStart;
 @end
 
 @implementation MainViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [TimerMgr sharedInstance].workoutTimerCompleted = ^{
+        [self updateTimerLabel];
+    };
+    [TimerMgr sharedInstance].breakTimerCompleted = ^{
+        [self updateTimerLabel];        
+    };
 
+    [self loadOverlayViews];
+    [self setInitialState];
+}
+
+- (void)loadOverlayViews {
+    self.workoutView = [[[NSBundle mainBundle]loadNibNamed:@"WorkoutView" owner:nil options:nil]objectAtIndex:0];
+    self.workoutView.numOfReps = [SettingsUtil sharedInstance].numberOfReps;
+    [self.workoutContentView addSubview:self.workoutView];
+    
+    self.breakOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:0];
+    self.breakOverlayView.frame = [UIViewUtil screenFrame];
+    
+    self.completedOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:1];
+    self.completedOverlayView.frame = [UIViewUtil screenFrame];
+    
+    [self.completedOverlayView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(overlayTapped:)]];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    // update with current config values
     void(^playWhistleSound)(void) = ^{
         // if sound is enabled
         BOOL whistleSoundEnabled = [SettingsUtil sharedInstance].whistleSoundEnabled;
@@ -46,13 +73,6 @@
     [TimerMgr sharedInstance].workoutTimerDidStop = ^{
         playWhistleSound();
     };
-    
-    [TimerMgr sharedInstance].workoutTimerCompleted = ^{
-        [self updateTimerLabel];
-    };
-    [TimerMgr sharedInstance].breakTimerCompleted = ^{
-        [self updateTimerLabel];        
-    };
     [TimerMgr sharedInstance].timerDidFire = ^() {
         BOOL tickSoundEnabled = [SettingsUtil sharedInstance].clockSoundEnabled;
         if(tickSoundEnabled) {
@@ -60,22 +80,9 @@
         }
         [self setTimerLabel];
     };
-
-    self.fullscreen = CGRectMake(0, 0, [UIViewUtil screenSize].width, [UIViewUtil screenSize].height);
     
-    // scroll view
-    self.workoutView = [[[NSBundle mainBundle]loadNibNamed:@"WorkoutView" owner:nil options:nil]objectAtIndex:0];
-    [self.workoutContentView addSubview:self.workoutView];
-    
-    self.breakOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:0];
-    self.breakOverlayView.frame = self.fullscreen;
-    
-    self.completedOverlayView = [[[NSBundle mainBundle]loadNibNamed:@"OverlayView" owner:nil options:nil]objectAtIndex:1];
-    self.completedOverlayView.frame = self.fullscreen;
-    
-    [self.completedOverlayView addGestureRecognizer:[UIViewUtil tapToDismissGestureWithTarget:self selector:@selector(overlayTapped:)]];
-    
-    [self setInitialState];
+    // update this if viewcontroller is re-used
+    self.workoutView.numOfReps = [SettingsUtil sharedInstance].numberOfReps;
 }
 
 - (void)setInitialState {
@@ -101,7 +108,7 @@
 }
 
 - (void)resetIteration {
-    self.timerLabel.text = @"00:00";
+    self.timerLabel.text = [UIViewUtil formatToTime:0];
     self.timerLabel.textColor = [UIViewUtil tealColor];
     
     // reset timer
@@ -125,11 +132,6 @@
     [self menuContainerViewController].panMode = self.buttonStateStart? MFSideMenuPanModeDefault : MFSideMenuPanModeNone;
 }
 
-- (BOOL)isStartButton {
-    NSString *title = self.startButton.titleLabel.text;
-    return [title isEqualToString:@"Start"];
-}
-
 // TODO TODO disable swipe gesture when timer is running!
 - (IBAction)startButtonPressed:(id)sender {
     
@@ -142,7 +144,7 @@
         
         __block MainViewController *bself = self;
         self.startOverlayView = [MainViewController startOverlayView];
-        self.startOverlayView.frame = self.fullscreen;
+        self.startOverlayView.frame = [UIViewUtil screenFrame];
         
         self.startOverlayView.completionBlock = ^{
             [[TimerMgr sharedInstance] beginSession];
@@ -161,7 +163,7 @@
         
         // show pause overlay
         PauseOverlayView *pauseView = [MainViewController pauseOverlayView];
-        pauseView.frame = self.fullscreen;
+        pauseView.frame = [UIViewUtil screenFrame];
         
         pauseView.doneBlock = ^{
             // done with workout

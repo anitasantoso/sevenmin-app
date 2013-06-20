@@ -7,7 +7,6 @@
 //
 
 #import "WorkoutView.h"
-#import "SettingsUtil.h"
 
 #define kScrollViewHeight 210
 
@@ -39,6 +38,11 @@
     self.numOfRepsLabel.text = [NSString stringWithFormat:@"%d/%d reps", self.repIndex+1, self.numOfReps];
 }
 
+//- (void)setNumOfReps:(NSInteger)numOfReps {
+//    _numOfReps = numOfReps;
+//    self.numOfRepsLabel.text = [NSString stringWithFormat:@"%d/%d reps", self.repIndex+1, self.numOfReps];
+//}
+
 - (void)resetRepIndex {
     self.repIndex = 0;
 }
@@ -52,9 +56,6 @@
     
     // first workout
     [self.scrollView scrollRectToVisible:CGRectMake(0, self.scrollView.frame.origin.y, [UIViewUtil screenSize].width, kScrollViewHeight) animated:YES];
-    
-    // remember number of reps from previous session
-    self.numOfReps = [SettingsUtil sharedInstance].numberOfReps;
 }
 
 - (void)showNextWorkout {
@@ -96,6 +97,8 @@
     [self.scrollView addSubview:view];
     [self reset];
     [self setRepIndex:0];
+
+    self.numOfRepsLabel.text = [NSString stringWithFormat:@"%d/%d reps", self.repIndex+1, self.numOfReps];
 }
 
 #pragma mark - scroll view delegate

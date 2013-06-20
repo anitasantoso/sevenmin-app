@@ -13,7 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
 
-@property NSInteger numOfReps;
+@property (atomic) NSInteger numOfReps;
 @property (strong, nonatomic) IBOutlet UILabel *numOfRepsLabel;
 @property (strong, nonatomic) IBOutlet UIView *mainContentView;
 

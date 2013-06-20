@@ -21,10 +21,6 @@
 
 @implementation SideMenuViewController
 
-- (UINavigationController*)navigationController {
-    return [self menuContainerViewController].centerViewController;
-}
-
 - (IBAction)workoutPressed:(id)sender {
     [self showViewControllerWithIdentifier:@"workout"];
 }
@@ -72,10 +68,12 @@
         if(!self.recordsViewCon) {
             self.recordsViewCon = [self viewControllerWithIdentifier:identifier];
         }
+        viewCon = self.recordsViewCon;
     }
     
     // show view controller
-    if([[self menuContainerViewController].centerViewController visibleViewController] != viewCon) {
+    UINavigationController *navCon = [self menuContainerViewController].centerViewController;
+    if([navCon visibleViewController] != viewCon) {
 
         CATransition* transition = [CATransition animation];
         transition.duration = 0.2;
@@ -83,15 +81,17 @@
         transition.subtype = kCATransitionFromTop;
         transition.delegate = self;
         
-        [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
-        [self.navigationController popViewControllerAnimated:NO];
-        [self.navigationController pushViewController:viewCon animated:NO];
+        [navCon.view.layer addAnimation:transition forKey:kCATransition];
+        [navCon popViewControllerAnimated:NO];
+        [navCon pushViewController:viewCon animated:NO];
     }
 }
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag {
-    // close menu after fade animation
-    [[self menuContainerViewController] toggleLeftSideMenuCompletion:nil];
+    [[self menuContainerViewController] toggleLeftSideMenuCompletion:^{
+        
+    }];
+
 }
 
 - (UIViewController*)viewControllerWithIdentifier:(NSString*)identifier {

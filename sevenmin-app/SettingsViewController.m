@@ -33,7 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.settings = @[@"Whistle Sound", @"Timer Sound", @"Number of Repetition", @"Workout duration", @"Break duration"];
+    self.settings = @[@"Whistle sound", @"Timer sound", @"Number of repetition", @"Workout duration", @"Break duration"];
     self.settingsKey = @[kSettingsWhistleSound, kSettingsClockSound, kSettingsNumOfReps, kSettingsWorkoutDuration, kSettingsBreakDuration];
     self.durationValues = @[[NSNumber numberWithInt:5], [NSNumber numberWithInt:10], [NSNumber numberWithInt:20], [NSNumber numberWithInt:30], [NSNumber numberWithInt:40], [NSNumber numberWithInt:50]];
     self.repValues = @[[NSNumber numberWithInt:1], [NSNumber numberWithInt:2], [NSNumber numberWithInt:3], [NSNumber numberWithInt:4], [NSNumber numberWithInt:5]];

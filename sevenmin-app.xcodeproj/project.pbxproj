@@ -15,7 +15,6 @@
 		085FBEA0177063C4003C7A25 /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBE9F177063C4003C7A25 /* navbar@2x.png */; };
 		085FBEA317706AB0003C7A25 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBEA217706AB0003C7A25 /* SettingsViewController.m */; };
 		085FBEA517707373003C7A25 /* whistle.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEA417707373003C7A25 /* whistle.m4a */; };
-		085FBEA717709316003C7A25 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEA617709316003C7A25 /* settings.png */; };
 		085FBEAD17709749003C7A25 /* SevenMinNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBEAC17709749003C7A25 /* SevenMinNavigationController.m */; };
 		085FBEB11770999A003C7A25 /* workout_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEB01770999A003C7A25 /* workout_icon@2x.png */; };
 		085FBEB317709EF9003C7A25 /* workout_icon_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEB217709EF9003C7A25 /* workout_icon_sel@2x.png */; };
@@ -28,6 +27,7 @@
 		085FBEC717713C77003C7A25 /* clock_tick.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEC617713C77003C7A25 /* clock_tick.m4a */; };
 		085FBEC917718A21003C7A25 /* records_icon_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEC817718A21003C7A25 /* records_icon_sel@2x.png */; };
 		085FBECC17718F1B003C7A25 /* UIViewController+MenuContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBECB17718F1B003C7A25 /* UIViewController+MenuContainer.m */; };
+		085FBECF17719333003C7A25 /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBECE17719332003C7A25 /* RecordsViewController.m */; };
 		08A89C1A176EF1F000A80266 /* SoundMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A89C19176EF1F000A80266 /* SoundMgr.m */; };
 		08A89C1E176EF2B600A80266 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A89C1D176EF2B600A80266 /* AVFoundation.framework */; };
 		08A89C24176FD3E100A80266 /* menu_icon_clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A89C23176FD3E100A80266 /* menu_icon_clock@2x.png */; };
@@ -106,7 +106,6 @@
 		085FBEA117706AB0003C7A25 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		085FBEA217706AB0003C7A25 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		085FBEA417707373003C7A25 /* whistle.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = whistle.m4a; sourceTree = "<group>"; };
-		085FBEA617709316003C7A25 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		085FBEAB17709749003C7A25 /* SevenMinNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenMinNavigationController.h; sourceTree = "<group>"; };
 		085FBEAC17709749003C7A25 /* SevenMinNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenMinNavigationController.m; sourceTree = "<group>"; };
 		085FBEB01770999A003C7A25 /* workout_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout_icon@2x.png"; sourceTree = "<group>"; };
@@ -124,6 +123,8 @@
 		085FBEC817718A21003C7A25 /* records_icon_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "records_icon_sel@2x.png"; sourceTree = "<group>"; };
 		085FBECA17718F1A003C7A25 /* UIViewController+MenuContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MenuContainer.h"; sourceTree = "<group>"; };
 		085FBECB17718F1B003C7A25 /* UIViewController+MenuContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MenuContainer.m"; sourceTree = "<group>"; };
+		085FBECD17719331003C7A25 /* RecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsViewController.h; sourceTree = "<group>"; };
+		085FBECE17719332003C7A25 /* RecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordsViewController.m; sourceTree = "<group>"; };
 		08A89C18176EF1F000A80266 /* SoundMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundMgr.h; sourceTree = "<group>"; };
 		08A89C19176EF1F000A80266 /* SoundMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundMgr.m; sourceTree = "<group>"; };
 		08A89C1D176EF2B600A80266 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -321,6 +322,8 @@
 				085FBEC0177133F0003C7A25 /* ButtonCell.m */,
 				085FBECA17718F1A003C7A25 /* UIViewController+MenuContainer.h */,
 				085FBECB17718F1B003C7A25 /* UIViewController+MenuContainer.m */,
+				085FBECD17719331003C7A25 /* RecordsViewController.h */,
+				085FBECE17719332003C7A25 /* RecordsViewController.m */,
 			);
 			path = "sevenmin-app";
 			sourceTree = "<group>";
@@ -368,7 +371,6 @@
 				085FBEB41770A0AA003C7A25 /* settings_icon_sel@2x.png */,
 				085FBEB217709EF9003C7A25 /* workout_icon_sel@2x.png */,
 				085FBEB01770999A003C7A25 /* workout_icon@2x.png */,
-				085FBEA617709316003C7A25 /* settings.png */,
 				085FBE9F177063C4003C7A25 /* navbar@2x.png */,
 				08A89C381770510F00A80266 /* about_icon@2x.png */,
 				08A89C341770507100A80266 /* records_icon@2x.png */,
@@ -510,7 +512,6 @@
 				08A89C3B17705A5500A80266 /* MainStoryboard.storyboard in Resources */,
 				085FBEA0177063C4003C7A25 /* navbar@2x.png in Resources */,
 				085FBEA517707373003C7A25 /* whistle.m4a in Resources */,
-				085FBEA717709316003C7A25 /* settings.png in Resources */,
 				085FBEB11770999A003C7A25 /* workout_icon@2x.png in Resources */,
 				085FBEB317709EF9003C7A25 /* workout_icon_sel@2x.png in Resources */,
 				085FBEB51770A0AA003C7A25 /* settings_icon_sel@2x.png in Resources */,
@@ -599,6 +600,7 @@
 				085FBEC1177133F1003C7A25 /* ButtonCell.m in Sources */,
 				085FBEC417713738003C7A25 /* SettingsUtil.m in Sources */,
 				085FBECC17718F1B003C7A25 /* UIViewController+MenuContainer.m in Sources */,
+				085FBECF17719333003C7A25 /* RecordsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
