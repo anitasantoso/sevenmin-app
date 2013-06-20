@@ -28,6 +28,22 @@ install_resource()
       ;;
   esac
 }
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendar-nextMonth.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendar-nextMonth@2x.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendar-previousMonth.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendar-previousMonth@2x.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendarDayCallout.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendarDayCallout@2x.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendarDaySelection-left.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendarDaySelection-left@2x.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendarDaySelection-middle.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendarDaySelection-middle@2x.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendarDaySelection-right.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendarDaySelection-right@2x.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendarDaySelection.png'
+install_resource 'DSLCalendarView/DSLCalendarView/Images/DSLCalendarDaySelection@2x.png'
+install_resource 'DSLCalendarView/DSLCalendarView/DSLCalendarDayCalloutView.xib'
+install_resource 'DSLCalendarView/DSLCalendarView/DSLCalendarMonthSelectorView.xib'
 
 rsync -avr --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rm "$RESOURCES_TO_COPY"

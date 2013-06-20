@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DSLCalendarView.h"
 
-@interface RecordsViewController : UIViewController
+@interface RecordsViewController : UIViewController<DSLCalendarViewDelegate>
+@property (strong, nonatomic) IBOutlet DSLCalendarView *calendarView;
 
 @end
