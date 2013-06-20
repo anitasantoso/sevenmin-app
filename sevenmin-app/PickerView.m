@@ -24,6 +24,7 @@
 
 - (void)setCurrentValue:(id)currentValue {
     _currentValue = currentValue;
+    self.selectedValue = currentValue;
     [self.values enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         if([[obj stringValue] isEqualToString:[currentValue stringValue]]) {
             [self.picker selectRow:idx inComponent:0 animated:YES];

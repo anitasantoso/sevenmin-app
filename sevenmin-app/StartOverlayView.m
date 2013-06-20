@@ -21,11 +21,12 @@
 }
 
 - (void)startCounter {
+    [[SoundMgr sharedInstance]playTickingSound];
     [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateLabels) userInfo:nil repeats:YES];
 }
 
 - (void)updateLabels {
-    if(self.counter >= 0 && self.counter <= 2) {
+    if(self.counter >= 0 && self.counter <= 1) {
         [[SoundMgr sharedInstance]playTickingSound];
     }
     switch(self.counter) {

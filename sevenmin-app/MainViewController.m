@@ -199,7 +199,7 @@
                 ((UILabel*)[self.completedOverlayView viewWithTag:99]).text = [NSString stringWithFormat:@"%d seconds", [TimerMgr sharedInstance].totalDuration];
                 
                 // show done overlay
-                [UIViewUtil addView:self.completedOverlayView toSuperview:self.view];
+                [UIViewUtil addOverlay:self.completedOverlayView];
                 [self setInitialState];
                 return;
             }
