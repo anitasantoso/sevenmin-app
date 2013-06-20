@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PickerView : UIView<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface PickerView : UIView<UIPickerViewDataSource, UIPickerViewDelegate, UIActionSheetDelegate>
 + (PickerView*)pickerWithTitle:(NSString*)title currentValue:(id)currentValue values:(NSArray*)values;
+@property (strong, nonatomic) IBOutlet UIToolbar *toolbar;
+
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
 - (IBAction)cancelButtonPressed:(id)sender;
 - (IBAction)doneButtonPressed:(id)sender;
@@ -17,4 +19,5 @@
 @property (nonatomic, copy) void (^completionBlock)(id);
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *barButtonTitle;
 - (void)show;
+- (void)remove;
 @end

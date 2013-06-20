@@ -7,6 +7,7 @@
 //
 
 #import "StartOverlayView.h"
+#import "SoundMgr.h"
 
 @interface StartOverlayView()
 @property NSInteger counter;
@@ -24,6 +25,9 @@
 }
 
 - (void)updateLabels {
+    if(self.counter >= 0 && self.counter <= 2) {
+        [[SoundMgr sharedInstance]playTickingSound];
+    }
     switch(self.counter) {
         case 0:
             self.label2.hidden = NO;

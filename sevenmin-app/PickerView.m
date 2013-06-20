@@ -10,7 +10,6 @@
 @interface PickerView()
 @property (nonatomic) id selectedValue;
 @property (nonatomic, strong) NSArray *values;
-@property (nonatomic, strong) NSString *title;
 @end
 
 @implementation PickerView
@@ -19,12 +18,8 @@
     PickerView *pickerView = [[[NSBundle mainBundle]loadNibNamed:@"PickerView" owner:nil options:nil]objectAtIndex:0];
     pickerView.currentValue = currentValue;
     pickerView.values = values;
-    pickerView.title = title;
+    [pickerView.barButtonTitle setTitle:title];
     return pickerView;
-}
-
-- (void)awakeFromNib {
-    [self.barButtonTitle setTitle:self.title];
 }
 
 - (void)setCurrentValue:(id)currentValue {
