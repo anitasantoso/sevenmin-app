@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		08046B59174994C600F3324D /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 08046B58174994C600F3324D /* UIView+Position.m */; };
-		081F9ADF174C3056000A00A2 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F9ADE174C3056000A00A2 /* icon@2x.png */; };
-		081F9AE1174C3494000A00A2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F9AE0174C3494000A00A2 /* icon.png */; };
 		081F9AE3174C384E000A00A2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081F9AE2174C384E000A00A2 /* QuartzCore.framework */; };
 		081F9AE6174C3F11000A00A2 /* UIViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F9AE5174C3F11000A00A2 /* UIViewUtil.m */; };
 		085FBEA0177063C4003C7A25 /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBE9F177063C4003C7A25 /* navbar@2x.png */; };
@@ -27,7 +25,6 @@
 		085FBEC717713C77003C7A25 /* clock_tick.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEC617713C77003C7A25 /* clock_tick.m4a */; };
 		085FBEC917718A21003C7A25 /* records_icon_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEC817718A21003C7A25 /* records_icon_sel@2x.png */; };
 		085FBECC17718F1B003C7A25 /* UIViewController+MenuContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBECB17718F1B003C7A25 /* UIViewController+MenuContainer.m */; };
-		085FBECF17719333003C7A25 /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FBECE17719332003C7A25 /* RecordsViewController.m */; };
 		085FBEE1177315A7003C7A25 /* settings_icon_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEDD177315A7003C7A25 /* settings_icon_sel.png */; };
 		085FBEE2177315A7003C7A25 /* settings_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEDE177315A7003C7A25 /* settings_btn.png */; };
 		085FBEE3177315A7003C7A25 /* records_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FBEDF177315A7003C7A25 /* records_icon.png */; };
@@ -67,6 +64,8 @@
 		08CA975C1748A149003A37EE /* WorkoutSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA975B1748A149003A37EE /* WorkoutSession.m */; };
 		08CA97671748A88B003A37EE /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CA97661748A88B003A37EE /* PickerView.xib */; };
 		08CA976A1748A8FE003A37EE /* PickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA97691748A8FE003A37EE /* PickerView.m */; };
+		08D8364917A41D110068244A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D8364817A41D110068244A /* icon.png */; };
+		08D8364B17A41D170068244A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D8364A17A41D170068244A /* icon@2x.png */; };
 		08DBD461174B60EF000A297D /* PauseOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBD460174B60EF000A297D /* PauseOverlayView.m */; };
 		08DBD464174B62B2000A297D /* TimerMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DBD463174B62B1000A297D /* TimerMgr.m */; };
 		08DBD46C174B6D4C000A297D /* WorkoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08DBD46B174B6D4C000A297D /* WorkoutView.xib */; };
@@ -102,8 +101,6 @@
 /* Begin PBXFileReference section */
 		08046B57174994C600F3324D /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
 		08046B58174994C600F3324D /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
-		081F9ADE174C3056000A00A2 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		081F9AE0174C3494000A00A2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		081F9AE2174C384E000A00A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		081F9AE4174C3F11000A00A2 /* UIViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewUtil.h; sourceTree = "<group>"; };
 		081F9AE5174C3F11000A00A2 /* UIViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewUtil.m; sourceTree = "<group>"; };
@@ -179,6 +176,8 @@
 		08CA97661748A88B003A37EE /* PickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
 		08CA97681748A8FE003A37EE /* PickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerView.h; sourceTree = "<group>"; };
 		08CA97691748A8FE003A37EE /* PickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerView.m; sourceTree = "<group>"; };
+		08D8364817A41D110068244A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		08D8364A17A41D170068244A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		08DBD45F174B60EF000A297D /* PauseOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseOverlayView.h; sourceTree = "<group>"; };
 		08DBD460174B60EF000A297D /* PauseOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseOverlayView.m; sourceTree = "<group>"; };
 		08DBD462174B62B1000A297D /* TimerMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerMgr.h; sourceTree = "<group>"; };
@@ -264,8 +263,8 @@
 		08C2009B17477575000D5408 = {
 			isa = PBXGroup;
 			children = (
-				081F9AE0174C3494000A00A2 /* icon.png */,
-				081F9ADE174C3056000A00A2 /* icon@2x.png */,
+				08D8364A17A41D170068244A /* icon@2x.png */,
+				08D8364817A41D110068244A /* icon.png */,
 				08C200AD17477575000D5408 /* sevenmin-app */,
 				08C200D117477576000D5408 /* sevenmin-appTests */,
 				08C200A617477575000D5408 /* Frameworks */,
@@ -516,8 +515,6 @@
 				08DBD490174B9EB9000A297D /* start_button@2x.png in Resources */,
 				08DBD491174B9EB9000A297D /* stop_button.png in Resources */,
 				08DBD492174B9EB9000A297D /* stop_button@2x.png in Resources */,
-				081F9ADF174C3056000A00A2 /* icon@2x.png in Resources */,
-				081F9AE1174C3494000A00A2 /* icon.png in Resources */,
 				08A89C3117704FC700A80266 /* settings_icon@2x.png in Resources */,
 				08A89C351770507100A80266 /* records_icon@2x.png in Resources */,
 				08A89C391770510F00A80266 /* about_icon@2x.png in Resources */,
@@ -539,6 +536,8 @@
 				085FBEE8177315DF003C7A25 /* about_icon_sel.png in Resources */,
 				085FBEEB17731613003C7A25 /* workout_icon.png in Resources */,
 				085FBEEC17731613003C7A25 /* workout_icon_sel.png in Resources */,
+				08D8364917A41D110068244A /* icon.png in Resources */,
+				08D8364B17A41D170068244A /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +619,6 @@
 				085FBEC1177133F1003C7A25 /* ButtonCell.m in Sources */,
 				085FBEC417713738003C7A25 /* SettingsUtil.m in Sources */,
 				085FBECC17718F1B003C7A25 /* UIViewController+MenuContainer.m in Sources */,
-				085FBECF17719333003C7A25 /* RecordsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

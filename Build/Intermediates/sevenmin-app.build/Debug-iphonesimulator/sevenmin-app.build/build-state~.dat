@@ -1,0 +1,1100 @@
+Tsevenmin-app
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/Info.plist" sevenmin-app/sevenmin-app-Info.plist
+cPhaseScriptExecution "Check Pods Manifest.lock" "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Script-4E1C6F641B054C4887D71BA7.sh"
+cProcessPCH "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch.pth" sevenmin-app/sevenmin-app-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/RecordsViewController.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/RecordsViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/TimerMgr.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/TimerMgr.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIView+Position.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIView+Position.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/WorkoutSession.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutSession.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
+c000000005190DBA10000000000000110
+t1368447905
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c0000000051085DB200000000001EB540
+t1359502770
+s2012480
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000051085DB20000000000228FE0
+t1359502770
+s2265056
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000051085DB400000000003DDFA0
+t1359502772
+s4054944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c0000000051085DB300000000000015F7
+t1359502771
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c0000000051085DBF00000000001D5750
+t1359502783
+s1922896
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c0000000051085DC10000000000000E8D
+t1359502785
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000051085DC20000000000AB6230
+t1359502786
+s11231792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/usr/include/Availability.h
+c0000000051085DD70000000000001B73
+t1359502807
+s7027
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch.pth
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/ButtonCell.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/MainViewController.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/PauseOverlayView.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/PickerView.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/RecordsViewController.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SettingsUtil.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SettingsViewController.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SevenMinNavigationController.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SevenMinute.LinkFileList
+c0000000051F3E60B0000000000000C54
+t1374938635
+s3156
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SideMenuViewController.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SoundMgr.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/StartOverlayView.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SwitchCell.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/TimerMgr.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIView+Position.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIViewController+MenuContainer.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIViewUtil.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/WorkoutSession.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/WorkoutView.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Script-2383E2210F6B4971956A4D02.sh
+c0000000051F3E60B000000000000002F
+t1374938635
+s47
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Script-4E1C6F641B054C4887D71BA7.sh
+c0000000051F3E60B0000000000000103
+t1374938635
+s259
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app.dSYM
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/Default-568h@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/Default.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/Default@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/Info.plist
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/MainStoryboard.storyboardc
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/OverlayView.nib
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/PickerView.nib
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/PkgInfo
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/SevenMinute
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/WorkoutView.nib
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/about_icon.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/about_icon@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/about_icon_sel.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/about_icon_sel@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/clock.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/clock@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/clock_tick.m4a
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex1.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex10.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex11.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex12.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex2.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex3.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex4.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex5.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex6.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex7.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex8.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/ex9.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/icon.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/icon@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/list_icon.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/navbar@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/records_icon.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/records_icon@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/records_icon_sel.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/records_icon_sel@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/settings_btn.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/settings_btn@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/settings_icon@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/settings_icon_sel.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/settings_icon_sel@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/start_button.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/start_button@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/stop_button.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/stop_button@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/whistle.m4a
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/workout_icon.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/workout_icon@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/workout_icon_sel.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/workout_icon_sel@2x.png
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/libPods.a
+c0000000051F3E60B00000000000AFAF0
+t1374938635
+s719600
+
+N/Users/Anita/Test Projects/sevenmin-app/icon.png
+c0000000051F3D4B60000000000000E1F
+t1374934198
+s3615
+
+N/Users/Anita/Test Projects/sevenmin-app/icon@2x.png
+c0000000051F3D4A40000000000001892
+t1374934180
+s6290
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/AppDelegate.m
+c0000000051C05F6D0000000000000E13
+t1371561837
+s3603
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/ButtonCell.m
+c0000000051C0FF4F000000000000031B
+t1371602767
+s795
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/Default-568h@2x.png
+c000000005062328600000000000048A2
+t1348612742
+s18594
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/Default.png
+c0000000050623286000000000000198C
+t1348612742
+s6540
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/Default@2x.png
+c00000000506232860000000000003EEB
+t1348612742
+s16107
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/MainStoryboard.storyboard
+c0000000051F3E5EE000000000000A653
+t1374938606
+s42579
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/MainViewController.m
+c0000000051C2E9A00000000000001FCD
+t1371728288
+s8141
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/OverlayView.xib
+c0000000051C2C0F1000000000000981B
+t1371717873
+s38939
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/PauseOverlayView.m
+c00000000519B58A70000000000000242
+t1369135271
+s578
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/PickerView.m
+c0000000051C2EA130000000000000ABD
+t1371728403
+s2749
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/PickerView.xib
+c0000000051C2DCB10000000000003623
+t1371724977
+s13859
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/RecordsViewController.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SettingsUtil.m
+c0000000051C14D0A0000000000000730
+t1371622666
+s1840
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SettingsViewController.m
+c0000000051C2DD17000000000000116A
+t1371725079
+s4458
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SevenMinNavigationController.m
+c0000000051C0670E0000000000000595
+t1371563790
+s1429
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SideMenuViewController.m
+c0000000051F3E5C90000000000000F16
+t1374938569
+s3862
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SoundMgr.m
+c0000000051C10BD600000000000004A2
+t1371605974
+s1186
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/StartOverlayView.m
+c0000000051C2E70900000000000004A8
+t1371727625
+s1192
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SwitchCell.m
+c0000000051C113A700000000000002C2
+t1371607975
+s706
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/TimerMgr.m
+c0000000051C14D3D0000000000000D4F
+t1371622717
+s3407
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIView+Position.m
+c0000000051946A730000000000000D5A
+t1368681075
+s3418
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIViewController+MenuContainer.m
+c0000000051C1589F000000000000021F
+t1371625631
+s543
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIViewUtil.h
+c0000000051C043EF000000000000025A
+t1371554799
+s602
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIViewUtil.m
+c0000000051C0440E00000000000006AF
+t1371554830
+s1711
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutSession.m
+c00000000519869C900000000000000CB
+t1368943049
+s203
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutView.m
+c0000000051C272CE0000000000000E5F
+t1371697870
+s3679
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutView.xib
+c0000000051C01ED800000000000037A1
+t1371545304
+s14241
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/about_icon.png
+c0000000051C2DE580000000000001418
+t1371725400
+s5144
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/about_icon@2x.png
+c0000000051C019860000000000001634
+t1371543942
+s5684
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/about_icon_sel.png
+c0000000051C2DE490000000000001437
+t1371725385
+s5175
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/about_icon_sel@2x.png
+c0000000051C0F67000000000000015B2
+t1371600496
+s5554
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/clock.png
+c000000004E6C5C720000000000000627
+t1315724402
+s1575
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/clock@2x.png
+c000000004E6C5C720000000000000795
+t1315724402
+s1941
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/clock_tick.m4a
+c0000000051C10DC70000000000000A93
+t1371606471
+s2707
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/en.lproj/InfoPlist.strings
+c0000000051973DF5000000000000002D
+t1368866293
+s45
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/list_icon.png
+c0000000051C038000000000000000B6C
+t1371551744
+s2924
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/main.m
+c0000000051BED8C3000000000000014F
+t1371461827
+s335
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/navbar@2x.png
+c0000000051C02C390000000000000B0B
+t1371548729
+s2827
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/records_icon.png
+c0000000051C2DDD300000000000013BB
+t1371725267
+s5051
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/records_icon@2x.png
+c0000000051C018E40000000000001415
+t1371543780
+s5141
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/records_icon_sel.png
+c0000000051C2DDC100000000000013FC
+t1371725249
+s5116
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/records_icon_sel@2x.png
+c0000000051C12E7500000000000013E6
+t1371614837
+s5094
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex1.png
+c0000000051F3B6350000000000001AEE
+t1374926389
+s6894
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex10.png
+c0000000051F3E0FC0000000000001675
+t1374937340
+s5749
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex11.png
+c0000000051F3E3E40000000000001959
+t1374938084
+s6489
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex12.png
+c0000000051F3E54C0000000000000F4B
+t1374938444
+s3915
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex2.png
+c0000000051F3B6460000000000000BA3
+t1374926406
+s2979
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex3.png
+c0000000051F3B650000000000000149B
+t1374926416
+s5275
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex4.png
+c0000000051F3BCA70000000000001549
+t1374928039
+s5449
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex5.png
+c0000000051F3C2E50000000000001C5D
+t1374929637
+s7261
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex6.png
+c0000000051F3C87A0000000000001443
+t1374931066
+s5187
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex7.png
+c0000000051F3D0010000000000001D0C
+t1374932993
+s7436
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex8.png
+c0000000051F3D2BC0000000000000CDC
+t1374933692
+s3292
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/ex9.png
+c0000000051F3DD160000000000001767
+t1374936342
+s5991
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/start_button.png
+c00000000519B598B0000000000000CFD
+t1369135499
+s3325
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/start_button@2x.png
+c00000000519B596A0000000000000E49
+t1369135466
+s3657
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/stop_button.png
+c0000000051983FD60000000000000C2A
+t1368932310
+s3114
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/resources/stop_button@2x.png
+c0000000051983FC00000000000000D3E
+t1368932288
+s3390
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/settings_btn.png
+c0000000051C2DDEE00000000000010B8
+t1371725294
+s4280
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/settings_btn@2x.png
+c0000000051C1566A0000000000000F1C
+t1371625066
+s3868
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/settings_icon@2x.png
+c0000000051C0F6A8000000000000183A
+t1371600552
+s6202
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/settings_icon_sel.png
+c0000000051C2DDFE00000000000017BC
+t1371725310
+s6076
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/settings_icon_sel@2x.png
+c0000000051C0F64F00000000000017C2
+t1371600463
+s6082
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/sevenmin-app-Prefix.pch
+c0000000051C14D2D0000000000000267
+t1371622701
+s615
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i"UIViewUtil.h"
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/whistle.m4a
+c0000000051C1128D0000000000006865
+t1371607693
+s26725
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/workout_icon.png
+c0000000051C2DE8C0000000000001555
+t1371725452
+s5461
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/workout_icon@2x.png
+c0000000051C0620F00000000000017A9
+t1371562511
+s6057
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/workout_icon_sel.png
+c0000000051C2DE7C0000000000001583
+t1371725436
+s5507
+
+N/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/workout_icon_sel@2x.png
+c0000000051C0676F0000000000001730
+t1371563887
+s5936
+
+Nsevenmin-app/sevenmin-app-Info.plist
+c0000000051F3E597000000000000054A
+t1374938519
+s1354
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/AppDelegate.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/ButtonCell.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/MainViewController.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/PauseOverlayView.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/PickerView.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/RecordsViewController.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SettingsUtil.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SettingsViewController.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SevenMinNavigationController.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SideMenuViewController.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SoundMgr.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/StartOverlayView.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SwitchCell.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/TimerMgr.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIView+Position.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIViewController+MenuContainer.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIViewUtil.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutSession.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutView.m"
+r0
+
+CBuild AST from "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/main.m"
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciese960a18b1da4b741^85b3a78b1da4b741^---0#1#0#--18"Check dependencies36"CFDE675A-C154-4FA4-8296-EC6B42E07DDC-
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/AppDelegate.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/AppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/ButtonCell.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/ButtonCell.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/MainViewController.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/MainViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/PauseOverlayView.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/PauseOverlayView.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/PickerView.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/PickerView.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/RecordsViewController.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/RecordsViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396631437.380325
+e396631437.424495
+r0
+xCompileC
+xBuild/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/RecordsViewController.o
+x/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/RecordsViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oclang: error: no such file or directory: '/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/RecordsViewController.m'
+oclang: error: no input files
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/Anita/Test Projects/sevenmin-app/sevenmin-app/RecordsViewController.m118a618d1da4b741^ed9e6c8d1da4b741^-274"clang: error: no such file or directory: '/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/RecordsViewController.m'clang: error: no input filesCommand /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang failed with exit code 11(21%IDEActivityLogMessage2@124"Command /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang failed with exit code 1-396631437#18446744073709551615#0#-2#--29"Apple LLVM compiler 4.2 Error--0#0#0#-19%DVTDocumentLocation3@94"file://localhost/Users/Anita/Test%20Projects/sevenmin-app/sevenmin-app/RecordsViewController.m000000000080d041^3241"CompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/RecordsViewController.o sevenmin-app/RecordsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Anita/Test Projects/sevenmin-app"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/SevenMinute.hmap" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/include" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/DSLCalendarView" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/MFSideMenu" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources/i386" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources" "-F/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator" -include "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch" -MMD -MT dependencies -MF "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/RecordsViewController.d" --serialize-diagnostics "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/RecordsViewController.dia" -c "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/RecordsViewController.m" -o "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/RecordsViewController.o"36"D040882F-B554-4F28-96C1-ECEBA5152B7B-
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SettingsUtil.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SettingsUtil.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SettingsViewController.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SettingsViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SevenMinNavigationController.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SevenMinNavigationController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SideMenuViewController.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SideMenuViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SoundMgr.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SoundMgr.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/StartOverlayView.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/StartOverlayView.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SwitchCell.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/SwitchCell.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/TimerMgr.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/TimerMgr.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396631437.380381
+e396631437.625843
+r1
+xCompileC
+xBuild/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/TimerMgr.o
+x/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/TimerMgr.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/Anita/Test Projects/sevenmin-app/sevenmin-app/TimerMgr.md68b618d1da4b741^d942a08d1da4b741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/Anita/Test%20Projects/sevenmin-app/sevenmin-app/TimerMgr.m0000000000000000^3163"CompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/TimerMgr.o sevenmin-app/TimerMgr.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Anita/Test Projects/sevenmin-app"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/SevenMinute.hmap" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/include" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/DSLCalendarView" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/MFSideMenu" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources/i386" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources" "-F/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator" -include "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch" -MMD -MT dependencies -MF "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/TimerMgr.d" --serialize-diagnostics "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/TimerMgr.dia" -c "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/TimerMgr.m" -o "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/TimerMgr.o"36"3B779E75-EF5E-4022-B2C4-61AFA40A7991-
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIView+Position.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIView+Position.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396631437.380396
+e396631437.625663
+r1
+xCompileC
+xBuild/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIView+Position.o
+x/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIView+Position.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIView+Position.mf88b618d1da4b741^d637a08d1da4b741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/Anita/Test%20Projects/sevenmin-app/sevenmin-app/UIView+Position.m0000000000000000^3205"CompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIView+Position.o sevenmin-app/UIView+Position.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Anita/Test Projects/sevenmin-app"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/SevenMinute.hmap" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/include" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/DSLCalendarView" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/MFSideMenu" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources/i386" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources" "-F/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator" -include "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch" -MMD -MT dependencies -MF "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIView+Position.d" --serialize-diagnostics "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIView+Position.dia" -c "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIView+Position.m" -o "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIView+Position.o"36"7240558F-7809-44C5-B2E4-8FB27A79AB8F-
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIViewController+MenuContainer.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIViewController+MenuContainer.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/UIViewUtil.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/UIViewUtil.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/WorkoutSession.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutSession.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396631437.380425
+e396631437.625738
+r1
+xCompileC
+xBuild/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/WorkoutSession.o
+x/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutSession.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutSession.m198c618d1da4b741^d140a08d1da4b741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/Anita/Test%20Projects/sevenmin-app/sevenmin-app/WorkoutSession.m0000000000000000^3199"CompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/WorkoutSession.o sevenmin-app/WorkoutSession.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Anita/Test Projects/sevenmin-app"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/SevenMinute.hmap" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/include" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/DSLCalendarView" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/MFSideMenu" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources/i386" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources" "-F/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator" -include "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch" -MMD -MT dependencies -MF "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/WorkoutSession.d" --serialize-diagnostics "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/WorkoutSession.dia" -c "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutSession.m" -o "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/WorkoutSession.o"36"628F330D-C28E-4B23-B704-3379A134B3FC-
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/WorkoutView.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutView.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/main.o "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileStoryboard "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/MainStoryboard.storyboard"
+r0
+
+CCompileXIB "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/OverlayView.xib"
+r0
+
+CCompileXIB "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/PickerView.xib"
+r0
+
+CCompileXIB "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/WorkoutView.xib"
+r0
+
+CCopyStringsFile "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/en.lproj/InfoPlist.strings" sevenmin-app/en.lproj/InfoPlist.strings
+r0
+
+CCpResource icon.png Build/Products/Debug-iphonesimulator/SevenMinute.app/icon.png
+r0
+
+CCpResource icon@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/icon@2x.png
+r0
+
+CCpResource sevenmin-app/Default-568h@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/Default-568h@2x.png
+r0
+
+CCpResource sevenmin-app/Default.png Build/Products/Debug-iphonesimulator/SevenMinute.app/Default.png
+r0
+
+CCpResource sevenmin-app/Default@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/Default@2x.png
+r0
+
+CCpResource sevenmin-app/about_icon.png Build/Products/Debug-iphonesimulator/SevenMinute.app/about_icon.png
+r0
+
+CCpResource sevenmin-app/about_icon@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/about_icon@2x.png
+r0
+
+CCpResource sevenmin-app/about_icon_sel.png Build/Products/Debug-iphonesimulator/SevenMinute.app/about_icon_sel.png
+r0
+
+CCpResource sevenmin-app/about_icon_sel@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/about_icon_sel@2x.png
+r0
+
+CCpResource sevenmin-app/clock.png Build/Products/Debug-iphonesimulator/SevenMinute.app/clock.png
+r0
+
+CCpResource sevenmin-app/clock@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/clock@2x.png
+r0
+
+CCpResource sevenmin-app/clock_tick.m4a Build/Products/Debug-iphonesimulator/SevenMinute.app/clock_tick.m4a
+r0
+
+CCpResource sevenmin-app/list_icon.png Build/Products/Debug-iphonesimulator/SevenMinute.app/list_icon.png
+r0
+
+CCpResource sevenmin-app/navbar@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/navbar@2x.png
+r0
+
+CCpResource sevenmin-app/records_icon.png Build/Products/Debug-iphonesimulator/SevenMinute.app/records_icon.png
+r0
+
+CCpResource sevenmin-app/records_icon@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/records_icon@2x.png
+r0
+
+CCpResource sevenmin-app/records_icon_sel.png Build/Products/Debug-iphonesimulator/SevenMinute.app/records_icon_sel.png
+r0
+
+CCpResource sevenmin-app/records_icon_sel@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/records_icon_sel@2x.png
+r0
+
+CCpResource sevenmin-app/resources/ex1.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex1.png
+r0
+
+CCpResource sevenmin-app/resources/ex10.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex10.png
+r0
+
+CCpResource sevenmin-app/resources/ex11.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex11.png
+r0
+
+CCpResource sevenmin-app/resources/ex12.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex12.png
+r0
+
+CCpResource sevenmin-app/resources/ex2.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex2.png
+r0
+
+CCpResource sevenmin-app/resources/ex3.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex3.png
+r0
+
+CCpResource sevenmin-app/resources/ex4.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex4.png
+r0
+
+CCpResource sevenmin-app/resources/ex5.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex5.png
+r0
+
+CCpResource sevenmin-app/resources/ex6.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex6.png
+r0
+
+CCpResource sevenmin-app/resources/ex7.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex7.png
+r0
+
+CCpResource sevenmin-app/resources/ex8.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex8.png
+r0
+
+CCpResource sevenmin-app/resources/ex9.png Build/Products/Debug-iphonesimulator/SevenMinute.app/ex9.png
+r0
+
+CCpResource sevenmin-app/resources/start_button.png Build/Products/Debug-iphonesimulator/SevenMinute.app/start_button.png
+r0
+
+CCpResource sevenmin-app/resources/start_button@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/start_button@2x.png
+r0
+
+CCpResource sevenmin-app/resources/stop_button.png Build/Products/Debug-iphonesimulator/SevenMinute.app/stop_button.png
+r0
+
+CCpResource sevenmin-app/resources/stop_button@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/stop_button@2x.png
+r0
+
+CCpResource sevenmin-app/settings_btn.png Build/Products/Debug-iphonesimulator/SevenMinute.app/settings_btn.png
+r0
+
+CCpResource sevenmin-app/settings_btn@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/settings_btn@2x.png
+r0
+
+CCpResource sevenmin-app/settings_icon@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/settings_icon@2x.png
+r0
+
+CCpResource sevenmin-app/settings_icon_sel.png Build/Products/Debug-iphonesimulator/SevenMinute.app/settings_icon_sel.png
+r0
+
+CCpResource sevenmin-app/settings_icon_sel@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/settings_icon_sel@2x.png
+r0
+
+CCpResource sevenmin-app/whistle.m4a Build/Products/Debug-iphonesimulator/SevenMinute.app/whistle.m4a
+r0
+
+CCpResource sevenmin-app/workout_icon.png Build/Products/Debug-iphonesimulator/SevenMinute.app/workout_icon.png
+r0
+
+CCpResource sevenmin-app/workout_icon@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/workout_icon@2x.png
+r0
+
+CCpResource sevenmin-app/workout_icon_sel.png Build/Products/Debug-iphonesimulator/SevenMinute.app/workout_icon_sel.png
+r0
+
+CCpResource sevenmin-app/workout_icon_sel@2x.png Build/Products/Debug-iphonesimulator/SevenMinute.app/workout_icon_sel@2x.png
+r0
+
+CGenerateDSYMFile "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app.dSYM" "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/SevenMinute"
+r0
+
+CLd "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/SevenMinute" normal i386
+r0
+
+CPhaseScriptExecution "Check Pods Manifest.lock" "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Script-4E1C6F641B054C4887D71BA7.sh"
+s396631435.732572
+e396631436.695718
+r1
+xPhaseScriptExecution
+xCheck Pods Manifest.lock
+x/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Script-4E1C6F641B054C4887D71BA7.sh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Run custom shell script 'Check Pods Manifest.lock'48a5bc8b1da4b741^6519b28c1da4b741^---0#0#0#--22108"PhaseScriptExecution "Check Pods Manifest.lock" Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Script-4E1C6F641B054C4887D71BA7.sh    cd "/Users/Anita/Test Projects/sevenmin-app"    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER Anita    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Products"    setenv BUILD_ROOT "/Users/Anita/Test Projects/sevenmin-app/Build/Products"    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator"    setenv CACHE_ROOT /var/folders/0l/7t7p30g10tn9f5lt_ymnrdqm0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/0l/7t7p30g10tn9f5lt_ymnrdqm0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_CXX_LANGUAGE_STANDARD gnu++0x    setenv CLANG_CXX_LIBRARY libc++    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_EMPTY_BODY YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app"    setenv CODE_SIGN_IDENTITY "iPhone Developer"    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/0l/7t7p30g10tn9f5lt_ymnrdqm0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator"    setenv CONFIGURATION_TEMP_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator"    setenv CONTENTS_FOLDER_PATH SevenMinute.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH SevenMinute.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/sevenmin-app.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME SevenMinute.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator"    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH SevenMinute.app/Executables    setenv EXECUTABLE_FOLDER_PATH SevenMinute.app    setenv EXECUTABLE_NAME SevenMinute    setenv EXECUTABLE_PATH SevenMinute.app/SevenMinute    setenv FILE_LIST "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH SevenMinute.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME SevenMinute.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD gnu99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER sevenmin-app/sevenmin-app-Prefix.pch    setenv GCC_PREPROCESSOR_DEFINITIONS "DEBUG=1  COCOAPODS=1"    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/include\" \"/Users/Anita/Test Projects/sevenmin-app/Pods/Headers\" \"/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/DSLCalendarView\" \"/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/MFSideMenu\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE sevenmin-app/sevenmin-app-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH SevenMinute.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH SevenMinute.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/sevenmin-app.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER Anita    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/sevenmin-app.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH SevenMinute.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/SevenMinute-LinkMap-normal-i386.txt"    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal/i386/SevenMinute.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH SevenMinute.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12E55    setenv MAC_OS_X_VERSION_ACTUAL 1084    setenv MAC_OS_X_VERSION_MAJOR 1080    setenv MAC_OS_X_VERSION_MINOR 0804    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Objects-normal"    setenv OBJROOT "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates"    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-ObjC -framework CoreGraphics -framework QuartzCore -framework UIKit"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH SevenMinute.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/PkgInfo"    setenv PKGINFO_PATH SevenMinute.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 10B141    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 60100    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH SevenMinute.app/PlugIns    setenv PODS_BUILD_HEADERS_SEARCH_PATHS "\"/Users/Anita/Test Projects/sevenmin-app/Pods/BuildHeaders\" \"/Users/Anita/Test Projects/sevenmin-app/Pods/BuildHeaders/DSLCalendarView\" \"/Users/Anita/Test Projects/sevenmin-app/Pods/BuildHeaders/MFSideMenu\""    setenv PODS_HEADERS_SEARCH_PATHS "\"/Users/Anita/Test Projects/sevenmin-app/Pods/Headers\" \"/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/DSLCalendarView\" \"/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/MFSideMenu\""    setenv PODS_PUBLIC_HEADERS_SEARCH_PATHS "\"/Users/Anita/Test Projects/sevenmin-app/Pods/Headers\" \"/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/DSLCalendarView\" \"/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/MFSideMenu\""    setenv PODS_ROOT "/Users/Anita/Test Projects/sevenmin-app/Pods"    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH SevenMinute.app/PrivateHeaders    setenv PRODUCT_NAME SevenMinute    setenv PRODUCT_SETTINGS_PATH "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/sevenmin-app-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT sevenmin-app    setenv PROJECT_DERIVED_FILE_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/DerivedSources"    setenv PROJECT_DIR "/Users/Anita/Test Projects/sevenmin-app"    setenv PROJECT_FILE_PATH "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app.xcodeproj"    setenv PROJECT_NAME sevenmin-app    setenv PROJECT_TEMP_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build"    setenv PROJECT_TEMP_ROOT "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates"    setenv PUBLIC_HEADERS_FOLDER_PATH SevenMinute.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH SevenMinute.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk    setenv SDK_NAME iphonesimulator6.1    setenv SDK_PRODUCT_BUILD_VERSION 10B141    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH SevenMinute.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders"    setenv SHARED_SUPPORT_FOLDER_PATH SevenMinute.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT "/Users/Anita/Test Projects/sevenmin-app"    setenv SRCROOT "/Users/Anita/Test Projects/sevenmin-app"    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT "/Users/Anita/Test Projects/sevenmin-app/Build/Products"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME sevenmin-app    setenv TARGET_BUILD_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator"    setenv TARGET_NAME sevenmin-app    setenv TARGET_TEMP_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build"    setenv TEMP_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build"    setenv TEMP_FILES_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build"    setenv TEMP_FILE_DIR "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build"    setenv TEMP_ROOT "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates"    setenv TEST_AFTER_BUILD NO    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH SevenMinute.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER Anita    setenv USER_APPS_DIR /Users/Anita/Applications    setenv USER_LIBRARY_DIR /Users/Anita/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH SevenMinute.app/version.plist    setenv VERSION_INFO_BUILDER Anita    setenv VERSION_INFO_FILE SevenMinute_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:SevenMinute  PROJECT:sevenmin-app-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME SevenMinute.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4H1003    setenv XCODE_VERSION_ACTUAL 0462    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0460    setenv YACC yacc    /bin/sh -c "\"/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Script-4E1C6F641B054C4887D71BA7.sh\""36"85C20A4A-FCCA-40A9-985B-5C4426DFBB25-
+
+CPhaseScriptExecution "Copy Pods Resources" "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/Script-2383E2210F6B4971956A4D02.sh"
+r0
+
+CProcessInfoPlistFile "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/Info.plist" sevenmin-app/sevenmin-app-Info.plist
+s396631435.668599
+e396631435.725055
+r1
+xProcessInfoPlistFile
+x/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/Info.plist
+xsevenmin-app/sevenmin-app-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Process sevenmin-app/sevenmin-app-Info.plistd93fab8b1da4b741^6b9cb98b1da4b741^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/Anita/Test%20Projects/sevenmin-app/sevenmin-app/sevenmin-app-Info.plist0000000000000000^718"ProcessInfoPlistFile Build/Products/Debug-iphonesimulator/SevenMinute.app/Info.plist sevenmin-app/sevenmin-app-Info.plist    cd "/Users/Anita/Test Projects/sevenmin-app"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility sevenmin-app/sevenmin-app-Info.plist -genpkginfo "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app/Info.plist"36"2F6016B3-7444-4BA4-AC8E-4414B7BFE809-
+
+CProcessPCH "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch.pth" sevenmin-app/sevenmin-app-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396631436.704101
+e396631437.373546
+r1
+xProcessPCH
+x/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch.pth
+xsevenmin-app/sevenmin-app-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Precompile sevenmin-app/sevenmin-app-Prefix.pchf46eb48c1da4b741^fd9f5f8d1da4b741^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/Anita/Test%20Projects/sevenmin-app/sevenmin-app/sevenmin-app-Prefix.pch0000000000000000^3051"ProcessPCH Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch.pth sevenmin-app/sevenmin-app-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Anita/Test Projects/sevenmin-app"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/SevenMinute.hmap" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/include" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/DSLCalendarView" "-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/MFSideMenu" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources/i386" "-I/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/sevenmin-app.build/Debug-iphonesimulator/sevenmin-app.build/DerivedSources" "-F/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator" --serialize-diagnostics "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch.dia" -c "/Users/Anita/Test Projects/sevenmin-app/sevenmin-app/sevenmin-app-Prefix.pch" -o "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch.pth" -MMD -MT dependencies -MF "/Users/Anita/Test Projects/sevenmin-app/Build/Intermediates/PrecompiledHeaders/sevenmin-app-Prefix-foryvurhkkdrwzecdfstyaukyaoh/sevenmin-app-Prefix.pch.d"36"596086C9-BCFA-4789-AA39-9202CCBEC5C4-
+
+CProcessPCH /Users/Anita/Library/Developer/Xcode/DerivedData/sevenmin-app-dszdrzsmrwlphfalxlztxgmgatlq/Index/PrecompiledHeaders/sevenmin-app-Prefix-ezdiciyubzzrvlgqfxirtjnogdrj_ast/sevenmin-app-Prefix.pch.pth sevenmin-app/sevenmin-app-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch "/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphonesimulator/SevenMinute.app"
+r0
+

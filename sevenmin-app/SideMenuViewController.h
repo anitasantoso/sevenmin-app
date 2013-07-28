@@ -11,12 +11,12 @@
 @interface SideMenuViewController : UIViewController
 - (IBAction)workoutPressed:(id)sender;
 - (IBAction)aboutPressed:(id)sender;
-- (IBAction)recordsPressed:(id)sender;
+//- (IBAction)recordsPressed:(id)sender;
 - (IBAction)settingsPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *workoutButton;
 @property (strong, nonatomic) IBOutlet UIButton *settingsButton;
 @property (strong, nonatomic) IBOutlet UIButton *aboutButton;
 
 
-@property (strong, nonatomic) IBOutlet UIButton *recordsButton;
+//@property (strong, nonatomic) IBOutlet UIButton *recordsButton;
 @end

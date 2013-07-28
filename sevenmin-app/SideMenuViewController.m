@@ -40,13 +40,13 @@
 - (void)showViewControllerWithIdentifier:(NSString*)identifier {
     BOOL isWorkoutSelected = [identifier isEqualToString:@"workout"];
     BOOL isSettingsSelected = [identifier isEqualToString:@"settings"];
-    BOOL isRecordsSelected = [identifier isEqualToString:@"records"];
+//    BOOL isRecordsSelected = [identifier isEqualToString:@"records"];
     BOOL isAboutSelected = [identifier isEqualToString:@"about"];
     
     [self.workoutButton setImage:[UIImage imageNamed:isWorkoutSelected? @"workout_icon_sel" : @"workout_icon"] forState:UIControlStateNormal];
     [self.settingsButton setImage:[UIImage imageNamed:isSettingsSelected? @"settings_icon_sel" : @"settings_icon"] forState:UIControlStateNormal];
     [self.aboutButton setImage:[UIImage imageNamed:isAboutSelected? @"about_icon_sel" : @"about_icon"] forState:UIControlStateNormal];
-    [self.recordsButton setImage:[UIImage imageNamed:isRecordsSelected? @"records_icon_sel" : @"records_icon"] forState:UIControlStateNormal];
+//    [self.recordsButton setImage:[UIImage imageNamed:isRecordsSelected? @"records_icon_sel" : @"records_icon"] forState:UIControlStateNormal];
     
     UIViewController *viewCon;
     if(isSettingsSelected) {
@@ -64,12 +64,13 @@
             self.aboutViewCon = [self viewControllerWithIdentifier:identifier];
         }
         viewCon = self.aboutViewCon;
-    } else if(isRecordsSelected) {
-        if(!self.recordsViewCon) {
-            self.recordsViewCon = [self viewControllerWithIdentifier:identifier];
-        }
-        viewCon = self.recordsViewCon;
     }
+//    else if(isRecordsSelected) {
+//        if(!self.recordsViewCon) {
+//            self.recordsViewCon = [self viewControllerWithIdentifier:identifier];
+//        }
+//        viewCon = self.recordsViewCon;
+//    }
     
     // show view controller
     UINavigationController *navCon = [self menuContainerViewController].centerViewController;

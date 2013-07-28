@@ -263,7 +263,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="JxO-on-eMc">
-                                <rect key="frame" x="0.0" y="190" width="90" height="71"/>
+                                <rect key="frame" x="0.0" y="117" width="90" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94509804249999996" green="0.94509804249999996" blue="0.94117647410000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -278,24 +278,8 @@
                                     <action selector="settingsPressed:" destination="6Di-Li-DCF" eventType="touchUpInside" id="BTn-ll-ePT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="TAi-Ec-3SW">
-                                <rect key="frame" x="0.0" y="117" width="90" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94509804249999996" green="0.94509804249999996" blue="0.94117647410000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="records_icon@2x.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="recordsPressed:" destination="6Di-Li-DCF" eventType="touchUpInside" id="m34-gs-Xza"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="gwG-ME-sJ1">
-                                <rect key="frame" x="0.0" y="263" width="90" height="71"/>
+                                <rect key="frame" x="0.0" y="190" width="90" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94509804249999996" green="0.94509804249999996" blue="0.94117647410000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -317,7 +301,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="aboutButton" destination="gwG-ME-sJ1" id="9km-0X-7sf"/>
-                        <outlet property="recordsButton" destination="TAi-Ec-3SW" id="SaT-vl-My6"/>
                         <outlet property="settingsButton" destination="JxO-on-eMc" id="qsz-e0-oQN"/>
                         <outlet property="workoutButton" destination="4qv-Cj-T02" id="3jm-uc-rbj"/>
                     </connections>
@@ -433,7 +416,6 @@ All images and excerpts are taken from The New York Times.</string>
         <image name="about_icon@2x.png" width="180" height="140"/>
         <image name="clock.png" width="25" height="25"/>
         <image name="list_icon.png" width="16" height="15"/>
-        <image name="records_icon@2x.png" width="180" height="140"/>
         <image name="settings_btn@2x.png" width="164" height="68"/>
         <image name="settings_icon@2x.png" width="180" height="140"/>
         <image name="start_button.png" width="170" height="50"/>
