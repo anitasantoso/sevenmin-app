@@ -1,13 +1,10 @@
 PODS:
-  - DSLCalendarView (0.0.1)
   - MFSideMenu (0.5.2)
 
 DEPENDENCIES:
-  - DSLCalendarView (~> 0.0.1)
   - MFSideMenu (~> 0.5.2)
 
 SPEC CHECKSUMS:
-  DSLCalendarView: 4baa34bb796a716df488f23c00b3eaeff459d1f4
   MFSideMenu: 5b27d9a112680a98458defbb2863cda45f2f2ffd
 
 COCOAPODS: 0.20.2

@@ -1,0 +1,25 @@
+Contents of /Users/Anita/Test Projects/sevenmin-app/sevenmin-app/sevenmin-app-Prefix.pch
+
+arm-apple-darwin12.4.0
+-x
+objective-c
+-arch
+armv7
+-fmessage-length=0
+-std=gnu99
+-fobjc-arc
+-fpascal-strings
+-O0
+-DDEBUG=1
+-DCOCOAPODS=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+-fstrict-aliasing
+-g
+-miphoneos-version-min=5.0
+-I/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphoneos/include
+-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers
+-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/DSLCalendarView
+-I/Users/Anita/Test Projects/sevenmin-app/Pods/Headers/MFSideMenu
+-F/Users/Anita/Test Projects/sevenmin-app/Build/Products/Debug-iphoneos
+SDK_PRODUCT_BUILD_VERSION=10B141
