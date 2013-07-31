@@ -392,11 +392,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" id="ae9-bC-rJZ">
                                 <rect key="frame" x="17" y="42" width="280" height="451"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <string key="text">In 12 exercises deploying only body weight, a chair and a wall, it fulfills the latest mandates for high-intensity effort, which essentially combines a long run and a visit to the weight room into about seven minutes of steady discomfort — all of it based on science.  
+                                <mutableString key="text">In 12 exercises deploying only body weight, a chair and a wall, it fulfills the latest mandates for high-intensity effort, which essentially combines a long run and a visit to the weight room into about seven minutes of steady discomfort — all of it based on science.  
 
-The exercises should be performed in rapid succession, allowing 30 seconds for each, while, throughout, the intensity hovers at about an 8 on a discomfort scale of 1 to 10. Those seven minutes should be, in a word, unpleasant. The upside is, after seven minutes, you’re done. 
-
-All images and excerpts are taken from The New York Times.</string>
+The exercises should be performed in rapid succession, allowing 30 seconds for each, while, throughout, the intensity hovers at about an 8 on a discomfort scale of 1 to 10. Those seven minutes should be, in a word, unpleasant. The upside is, after seven minutes, you’re done. </mutableString>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -458,11 +456,9 @@ All images and excerpts are taken from The New York Times.</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SideMenuViewController.h"/>
             <relationships>
                 <relationship kind="action" name="aboutPressed:"/>
-                <relationship kind="action" name="recordsPressed:"/>
                 <relationship kind="action" name="settingsPressed:"/>
                 <relationship kind="action" name="workoutPressed:"/>
                 <relationship kind="outlet" name="aboutButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="recordsButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="settingsButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="workoutButton" candidateClass="UIButton"/>
             </relationships>
