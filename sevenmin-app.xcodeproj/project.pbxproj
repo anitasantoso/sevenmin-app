@@ -139,7 +139,6 @@
 		085FBEC817718A21003C7A25 /* records_icon_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "records_icon_sel@2x.png"; sourceTree = "<group>"; };
 		085FBECA17718F1A003C7A25 /* UIViewController+MenuContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MenuContainer.h"; sourceTree = "<group>"; };
 		085FBECB17718F1B003C7A25 /* UIViewController+MenuContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MenuContainer.m"; sourceTree = "<group>"; };
-		085FBECD17719331003C7A25 /* RecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsViewController.h; sourceTree = "<group>"; };
 		085FBEDD177315A7003C7A25 /* settings_icon_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_icon_sel.png; sourceTree = "<group>"; };
 		085FBEDE177315A7003C7A25 /* settings_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_btn.png; sourceTree = "<group>"; };
 		085FBEDF177315A7003C7A25 /* records_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = records_icon.png; sourceTree = "<group>"; };
@@ -358,7 +357,6 @@
 				085FBEC0177133F0003C7A25 /* ButtonCell.m */,
 				085FBECA17718F1A003C7A25 /* UIViewController+MenuContainer.h */,
 				085FBECB17718F1B003C7A25 /* UIViewController+MenuContainer.m */,
-				085FBECD17719331003C7A25 /* RecordsViewController.h */,
 			);
 			path = "sevenmin-app";
 			sourceTree = "<group>";
